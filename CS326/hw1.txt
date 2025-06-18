@@ -1,0 +1,88 @@
+Miguel Muniz
+CS326
+
+1.
+a)  int a = 214748364 + 1
+b)  cout << b << endl; 
+c)  int n = 2.5;
+d)  int size;
+    std::cin >> size;
+    int arr[size];
+
+2.
+a) (a|b)*(b|a)*
+b) It's not possible to represent numbers in regular expression
+c) (a|a)* e
+
+3.
+a) S-> ab  | ba
+b) S-> aSb | ε
+c) S → (S) | [S] | {S} | ε
+
+4.
+a)  
+    P->B 
+    B->D
+    D->Z
+b)  
+    P → B 
+    B → (P) 
+    P → B 
+    B → D 
+    D → x 
+c)
+    P->[B,P]
+    [B,P]->D
+    D->Y
+d)
+    P->B
+    B->(P)
+    P->[B,P]
+    [B,P]->D
+    D->X
+    D->Y
+e)
+    P->[B,P]
+    [B,P]->(P)
+    (P)->B
+    B->D
+    B->X
+    
+
+5. 
+a) 
+    AssignStmt
+    /   |    \
+  Var   =     E
+  /   \       |
+id(a)  Index  E + E
+        |     |   |
+      E(2)   Var   nr(1)
+              |
+              id(b)
+
+    AssignStmt
+    /   |    \
+  Var   =     E
+   |          |
+id(x)         Var
+               |
+            id[Index]
+               |   
+             Index
+               |
+               E
+              / \
+             E - E
+            /     \
+          Var     nr(3)
+        /
+    id(k) 
+
+
+
+b) 
+AssignStmt → Var = E 
+Var   →  id | id [ Index ] | id [ Index ] [ Index ]
+Index  →  E 
+E   →  Var | nr | E + E | E – E | E * E | E / E | (E) 

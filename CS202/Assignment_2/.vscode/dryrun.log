@@ -1,0 +1,9 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/mnt/c/Users/migue/Dropbox/PC/Documents/CS202/Assignment_2'
+g++ -c -o main.o main.cpp -Wall -Wextra -pedantic -std=c++11 -g 
+g++ -c -o item.o item.cpp -Wall -Wextra -pedantic -std=c++11 -g 
+ 
+g++ -c -o player.o player.cpp -Wall -Wextra -pedantic -std=c++11 -g 
+g++ -o a.out main.o item.o player.o -Wall -Wextra -pedantic -std=c++11 -g
+make: Leaving directory '/mnt/c/Users/migue/Dropbox/PC/Documents/CS202/Assignment_2'
+ 

@@ -1,0 +1,302 @@
+//struct creates a list of objects. 
+
+//each object created takes the space of this data type. Each object is 12 bytes. 
+
+Struct Clock {
+	int hr;
+	int min;
+	int sec;
+}; 
+Clock obj1;
+////////////////////////
+#include<iostream>
+Struct Clock {
+        int hr;
+        int min;
+        int sec;
+};
+
+int main() {
+	Clock myclock;
+	myclock.hr = 5;
+	myclock.min = 30;
+	myclock.sec = 0;
+
+	std::cout << myclock.hr << ";" << myclock.min << ";" << myclock.sec << "\n";
+}
+//////////////////////////
+same but now class
+class Clock {
+public:
+        int hr;
+        int min;
+        int sec;
+}
+
+int main() {
+        Clock myclock;
+        myclock.hr = 5;
+        myclock.min = 30;
+        myclock.sec = 0;
+
+        std::cout << myclock.hr << ";" << myclock.min << ";" << myclock.sec << "\n";
+}
+/////////////////////////////////
+Access modifiers
+1. Private
+2. Public
+3. Protected
+/////////////////////////////////
+struct is public by default
+class needs to be defined
+
+class Clock {
+private:
+        int hr;
+        int min;
+        int sec;
+
+public:
+	void showTime() const;
+	void setHr(int a) { hr = a; };
+	void setMin(int a) { min = a; };
+	void setSec(int a) { sec = a; };
+};
+
+int main() {
+        Clock myclock, myclock2;
+        myclock.hr = 5;
+        myclock.min = 30;
+        myclock.sec = 0;
+	myclock.showTime(); 
+
+        myclock2.hr = 5;
+        myclock2.min = 30;
+        myclock2.sec = 0;
+        myclock2.showTime();
+}
+
+void Clock::showTime(); const{
+        std::cout << myclock.hr << ";" << myclock.min << ";" << myclock.sec << "\n";
+}
+/////////////////////////////
+std is the standard name space
+namespace can superseed classes
+
+Classname:: functionname.
+|Scope|     |Name|
+
+Private members of a class are only accessiblie by other members of the same class.
+
+/////////////////////////////
+//setters/mutations: 
+
+class Clock {
+private:
+        int hr;
+        int min;
+        int sec;
+
+public:
+        void showTime() const;        
+	void setHr(int a) { hr = a; };
+        void setMin(int a) { min = a; };
+        void setSec(int a) { sec = a; };
+};
+
+int main() {
+        Clock myclock, myclock2;
+        myclock.hr = 5;
+        myclock.min = 30;
+        myclock.sec = 0;
+        myclock.showTime();
+
+        myclock2.hr = 5;
+        myclock2.min = 30;
+        myclock2.sec = 0;
+        myclock2.showTime();
+}
+
+void Clock::showTime(); const{
+        std::cout << myclock.hr << ";" << myclock.min << ";" << myclock.sec << "\n";
+}
+void Clock::setHr(int a) {
+	if(a < 0) {
+	 hr = 0;
+	} else if (a > 23) {
+	 hr =23;
+	} else {
+	 hr = a;
+}
+
+void Clock::setMin(int a) {
+        if(a < 0) {
+         min = 0;
+        } else if (a > 23) {
+         min = 23;
+        } else {
+         min = a;
+}
+
+void Clock::setSec(int a) {
+        if(a < 0) {
+         sec = 0;
+        } else if (a > 23) {
+         sec = 23;
+        } else {
+         sec = a;
+}
+}
+////////////////////////////////
+//Getters/Accessors
+class Clock {
+private:
+        int hr;
+        int min;
+        int sec;
+
+public:
+        void showTime() const;        
+	void setHr(int)
+        void setMin(int)
+        void setSec(int)
+        int getSec() const { return sec; }
+        int getMin() const { return Min; }
+        int getHr() const { return hr; }
+
+
+};
+
+int main() {
+        Clock myclock, myclock2;
+        myclock.setHr = 5;
+        myclock.setMin = 30;
+        myclock.setSec = 0;
+        myclock.showTime();
+        std::cout << "Seconds = " << muclock.getSec() << "\n"
+//        myclock2.hr = 5;
+//        myclock2.min = 30;
+//        myclock2.sec = 0;
+//        myclock2.showTime();
+}
+
+void Clock::showTime(); const{
+        std::cout << myclock.hr << ";" << myclock.min << ";" << myclock.sec << "\n";
+}
+/////////////////////////
+//constructors: has to be the same name as the class; constructs object from class.
+//**Required** Default Constructor: runs whenever an object is created
+//**Optional** Parameterized  Constructor: Constructor that accpets parameters
+//Do not call member functions from a constructor it is undefined behavior. 
+//**Required** Copy Constructor: Initalizes an object as a copu of another object of the same class.
+//If the data within your class does not have predefined counstrctors, an implicit constructor WILL NOT be created
+class Clock {
+private:
+        int hr;
+        int min;
+        int sec;
+
+public:
+        Clock();
+        Clock(int hr, int min, int sec);
+        clock();
+        void showTime() const;        
+	void setHr(int)
+        void setMin(int)
+        void setSec(int)
+        int getSec() const { return sec; }
+        int getMin() const { return Min; }
+        int getHr() const { return hr; }
+};
+
+int main(){
+        Clock myclock(999,111,333), myclock2;
+        std::cout << "Clock : " << "\n";
+        myclock.showTime();
+        myclock.setHr(598902384);
+        myclock.setMin(23432402384);
+        myclock.setSec(6787687902384);
+        myclock.showTime();
+
+        //std::cout << "Seconds = " << myclock.getSec() << "\n";
+        //myclock2.hr = 5;
+        //myclock2.min = 30;
+        //myclock2.sec = 0;
+        //myclock2.showTime();
+}
+
+Clock::Clock(){
+        hr = 10;
+        min = 10;
+        sec = 0; 
+        std::cout << "Clock has been created" << "\n";
+}
+Clock::Clock 
+
+Clock::Clock(int a, int b, int c){
+        hr = 10;
+        min = 10;
+        sec = 0; 
+}
+
+void Clock::showTime(); const{
+        std::cout << myclock.hr << ";" << myclock.min << ";" << myclock.sec << "\n";
+}
+void Clock::setHr(int a) {
+	if(a < 0) {
+	 hr = 0;
+	} else if (a > 23) {
+	 hr =23;
+	} else {
+	 hr = a;
+}
+
+void Clock::setMin(int a) {
+        if(a < 0) {
+         min = 0;
+        } else if (a > 23) {
+         min = 23;
+        } else {
+         min = a;
+}
+
+void Clock::setSec(int a) {
+        if(a < 0) {
+         sec = 0;
+        } else if (a > 23) {
+         sec = 23;
+        } else {
+         sec = a;
+}
+}
+/////////////////////////////////////
+//pointers
+
+
+
+
+//////
+//constructors
+Class ClassA {
+        ClassA()
+        ClassA(....) - constructor
+        ClassA() Const  - copy constructor
+
+        int a; constructor
+        int a(5); parametersised constructor
+        int a = 5; 
+
+        Clock myclock(2,3,4); - Initialized with param constructor.
+        Clock my clock = Clock(2,3,4)
+                         |param constructor|
+       |Copy constructor|<-                
+}
+use constructor when starting an object
+use a mutator/setter if you want to change something in a loop or array
+You can use the value from the stream into set value, set energy cost, and set name
+
+Diffrence between struct and class
+struct is all public 
+class is all private
+
+static variables exsist once in memory.

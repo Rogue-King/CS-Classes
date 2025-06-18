@@ -1,0 +1,4 @@
+If you change the return type or parameter types/numbers in a function it changes the functions' signature. 
+You can change a functions data representation by changing its signiture thereby having multiple of the same 
+function with diffrent data utility.
+

@@ -1,0 +1,138 @@
+Recursion on:
+-List - empty list?
+    \ - on cdr of list
+-number - nr. is zero?
+    \ - on (n-1)
+
+>(load "file.txt")
+>....
+
+Local Definitions:
+-Let p has a list of bindings and a body
+(let ( ( a 1)    } Bindings
+       ( b 3) )  }   
+       (+ a b ) )  } Body
+=> 5
+a => ErrorL var. a is not bound
+b=> 4 -- b -- 4 --
+
+-let makes its binding in ||
+(define x 'a)
+(define y 'b)
+(list x y) => (a b)
+(let ( (x y)
+       (y x) )      circle on y/x
+  (list x y) ) => (b a)
+
+(let ((x 1)
+      (y ( + x 1))
+      (list x y))
+      => Error: var. x is not bound
+
+Let n -This is exactly like let, but does the binding sequentially 
+(let* ( (x 1))
+        (y ( + x 1))
+        (list x y))
+
+simulate let* :
+(let ((x 1))
+  (let ((y (+ x 1)))
+    (list x y)))
+=> (1 2)
+
+I/O : 
+-Read
+-Display
+-Newline
+
+-Fct. that asks for a nr.
+(define (ask-nr)
+  (display "Enter a nr.: ")
+  (let ((n (read)))
+    (if (number? n)
+        n
+        (ask-nr))))
+
+Higher-Order Functions:
+-In Scheme fct. is a first-class object - can be passed as an argument, can be returned as a result, can be created dynamically
+-A fct. is a higher-order fct. if it 
+      - takes another fct. as arg
+    \ - returns a fct. as result
+    
+    C:
+
+-Map :
+(define (square x ) (* x x))
+(map square '(1 2 3 4)) 
+    => (1 4 9 16)
+(map + '(1 2 3 '(4 5 6)))
+=> (5 7 9)
+(map (lambda (x) (* 2 x)) '(1 2 3))
+    #<procedure>
+=> (2 4 6)
+
+-Cong : 0 take f and L, return
+    the conj(AND) of applying f on elements in L
+    (define (cong f L)
+      (cond ((null? L)  #t)
+      (else (and  (f (car L))
+                  (cong f (cdr L))))))
+
+
+Ex: (cong number> '(3 | #t 4 '(1 2)))
+=> #f
+
+-Filter - take a predicate f and L,
+returns a list with elems. in L
+that satisfy predicate f
+
+Ex: (filter number? '(a 4 (1 2) "testing" +))
+(filter (lambada(x) (>= x 0)) '(-2  |3 -1 1 4))
+=> (3 1 4)
+
+(define (filter f L)
+    (cond ((null? L) '())
+          ((f (car L)) (cons (car L) (filter f (cdr L))))
+            (else (filter f (cdr L)))))
+
+Sequencing
+-Begin 
+    (Login <expa>...<expn>) {expn -> ret.}
+    (if (< x 0)
+        (begin (display "negative")
+               (f x))
+        (begin (display "positive")
+               (g x)))
+
+(define x 1)
+(+ x 1) => 2
+    x   => 1
+
+(define y '(1 2 3))
+(reverse y ) => (3 2 1)
+    y => (1 2 3)
+
+Functions compute 8 return a result
+They do not alter their input
+
+So far, everything is in "pure" functional form (no side-effects)
+
+Exceptions:
+-define
+-display
+
+Internal Structure of expressions 
+-All variables are pointers to values 
+-Atom values 
+    (define x 1)  {x->1}
+-List values 
+    (define y '(1 2 3)) {y->[block(1)] -> [block(2)] -> [block(3)]}
+
+Each elem. is cons call
+-pointer to values
+-pointer to next cell
+
+(define x '(b c))   {x->[block(b)] -> [block(c)]} -> [block(d)]}
+(define y '(d))     {y->[block(d)]}
+
+(define z (append x y)) {z->[block(b)] -> [block(c)] -> [block(d)]}

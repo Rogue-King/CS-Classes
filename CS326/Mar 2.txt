@@ -1,0 +1,10 @@
++-*/
+-associativity : L to R
+-precedence : */ have higher Precedence than +-
+
+Infix: 1+2+3     | g -3 * 2 + 1  | 4 * (1 + 2) | 4 * 1 + 2
+PrefixL ++ 1 2 3 | + - g * 3 2 1 | * 4 + 1 2   | + * 4 1 2
+
+(a[f(x)] = a[f(x)] + 3;
+(i = f(x);
+(a[i] = a[i] + 3;

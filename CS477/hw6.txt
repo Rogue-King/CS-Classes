@@ -1,0 +1,5 @@
+T[i] = max(T[i-1], b[i] + T[p(i)]) for i = 1, 2, ..., n
+
+where T[i] represents tables. b[i] represents the bonus for placing a bouquet on the ith table, p(i) is a function that returns the largest index j
+
+when T[p(i)] we find the largest index j such that locations[j] <= locations[i] - 5

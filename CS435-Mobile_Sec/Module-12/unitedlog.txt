@@ -1,0 +1,963 @@
+--------- beginning of main
+04-28 21:18:11.728  3123  3123 W .mobile.androi: Unexpected CPU variant for X86 using defaults: x86_64
+04-28 21:18:11.741  3123  3123 I .mobile.androi: The ClassLoaderContext is a special shared library.
+04-28 21:18:11.758  3123  3138 W FA-Ads  : Disabling data collection. Found google_app_id in strings.xml but Google Analytics for Firebase is missing. Remove this value or add Google Analytics for Firebase to resume data collection.
+04-28 21:18:11.764  3123  3138 W GooglePlayServicesUtil: com.united.mobile.android requires the Google Play Store, but it is missing.
+04-28 21:18:11.764  3123  3138 E DynamiteModule: Invalid GmsCore APK, remote loading disabled.
+04-28 21:18:11.767  3123  3138 I DynamiteModule: Considering local module com.google.android.gms.ads.dynamite:234310600 and remote module com.google.android.gms.ads.dynamite:0
+04-28 21:18:11.767  3123  3138 I DynamiteModule: Selected local version of com.google.android.gms.ads.dynamite
+04-28 21:18:11.769  3123  3138 W Ads     : #007 Could not call remote method. @2
+04-28 21:18:11.769  3123  3138 W Ads     : com.google.android.gms.internal.ads.zzcbq: com.google.android.gms.dynamite.DynamiteModule$LoadingException: Failed to instantiate module class: com.google.android.gms.ads.measurement.DynamiteMeasurementManager
+04-28 21:18:11.769  3123  3138 W Ads     : 	at com.google.android.gms.internal.ads.zzcbr.zzb(com.google.android.gms:play-services-ads-lite@@22.6.0:2)
+04-28 21:18:11.769  3123  3138 W Ads     : 	at com.google.android.gms.internal.ads.zzbpj.run(com.google.android.gms:play-services-ads-lite@@22.6.0:11)
+04-28 21:18:11.769  3123  3138 W Ads     : 	at java.lang.Thread.run(Thread.java:764)
+04-28 21:18:11.769  3123  3138 W Ads     : Caused by: com.google.android.gms.dynamite.DynamiteModule$LoadingException: Failed to instantiate module class: com.google.android.gms.ads.measurement.DynamiteMeasurementManager
+04-28 21:18:11.769  3123  3138 W Ads     : 	at com.google.android.gms.dynamite.DynamiteModule.instantiate(com.google.android.gms:play-services-basement@@18.2.0:3)
+04-28 21:18:11.769  3123  3138 W Ads     : 	at com.google.android.gms.internal.ads.zzcbr.zzb(com.google.android.gms:play-services-ads-lite@@22.6.0:1)
+04-28 21:18:11.769  3123  3138 W Ads     : 	... 2 more
+04-28 21:18:11.769  3123  3138 W Ads     : Caused by: java.lang.ClassNotFoundException: Didn't find class "com.google.android.gms.ads.measurement.DynamiteMeasurementManager" on path: DexPathList[[zip file "/system/framework/org.apache.http.legacy.boot.jar", zip file "/data/app/com.united.mobile.android-MMSKuL8ypPJIrimvNfgRbw==/base.apk"],nativeLibraryDirectories=[/data/app/com.united.mobile.android-MMSKuL8ypPJIrimvNfgRbw==/lib/x86_64, /data/app/com.united.mobile.android-MMSKuL8ypPJIrimvNfgRbw==/base.apk!/lib/x86_64, /system/lib64]]
+04-28 21:18:11.769  3123  3138 W Ads     : 	at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:134)
+04-28 21:18:11.769  3123  3138 W Ads     : 	at java.lang.ClassLoader.loadClass(ClassLoader.java:379)
+04-28 21:18:11.769  3123  3138 W Ads     : 	at java.lang.ClassLoader.loadClass(ClassLoader.java:312)
+04-28 21:18:11.769  3123  3138 W Ads     : 	at com.google.android.gms.dynamite.DynamiteModule.instantiate(com.google.android.gms:play-services-basement@@18.2.0:1)
+04-28 21:18:11.769  3123  3138 W Ads     : 	... 3 more
+04-28 21:18:11.770  3123  3123 I FirebaseInitProvider: FirebaseApp initialization successful
+04-28 21:18:11.773  3123  3146 E FirebaseInstanceId: Google Play services missing or without correct permission.
+04-28 21:18:11.794  3123  3123 D WM-WrkMgrInitializer: Initializing WorkManager with default configuration.
+04-28 21:18:11.807  3123  3123 W System.err: java.security.NoSuchAlgorithmException: no such algorithm: TLSv1.2 for provider AndroidKeyStore
+04-28 21:18:11.808  3123  3123 W System.err: 	at sun.security.jca.GetInstance.getService(GetInstance.java:87)
+04-28 21:18:11.808  3123  3123 W System.err: 	at sun.security.jca.GetInstance.getInstance(GetInstance.java:206)
+04-28 21:18:11.808  3123  3123 W System.err: 	at javax.net.ssl.SSLContext.getInstance(SSLContext.java:233)
+04-28 21:18:11.808  3123  3123 W System.err: 	at com.united.mobile.android.UnitedApplication.updateSSLContext(UnitedApplication.kt:53)
+04-28 21:18:11.808  3123  3123 W System.err: 	at com.united.mobile.android.UnitedApplication.onCreate(UnitedApplication.kt:26)
+04-28 21:18:11.808  3123  3123 W System.err: 	at android.app.Instrumentation.callApplicationOnCreate(Instrumentation.java:1154)
+04-28 21:18:11.808  3123  3123 W System.err: 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:5871)
+04-28 21:18:11.808  3123  3123 W System.err: 	at android.app.ActivityThread.access$1100(ActivityThread.java:199)
+04-28 21:18:11.808  3123  3123 W System.err: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1650)
+04-28 21:18:11.808  3123  3123 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+04-28 21:18:11.808  3123  3123 W System.err: 	at android.os.Looper.loop(Looper.java:193)
+04-28 21:18:11.808  3123  3123 W System.err: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+04-28 21:18:11.808  3123  3123 W System.err: 	at java.lang.reflect.Method.invoke(Native Method)
+04-28 21:18:11.808  3123  3123 W System.err: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+04-28 21:18:11.808  3123  3123 W System.err: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+04-28 21:18:11.828  3123  3123 D NetworkSecurityConfig: Using Network Security Config from resource network_security_config debugBuild: false
+04-28 21:18:11.929  3123  3123 I CYFMonitor: Initializing Akamai BMP SDK Version 2.2.3
+04-28 21:18:11.929  3123  3123 I CYFMonitor: Initializing Akamai BMP Monitor
+04-28 21:18:11.949  3123  3172 D ProvisioningManager: Application has been provisioned!
+04-28 21:18:11.971  3123  3123 D locuslabs: Atrius Personal Wayfinder Android SDK |3.2.51| received applicationContext
+04-28 21:18:11.994  3123  3123 D locuslabs: queueAnalyticsEvent |PRODUCTION| |A1D4XY4NEBABI9| |{"_eventType":"appAndUserProperties","_eventId":"15f303eb-1de8-486b-8c5c-bcd9d5872947","_eventVersion":"1","installId":"f9da122f-30a2-48dc-a461-b1082d7dd2df","timestamp":"2024-04-29T04:18:11.993Z","shortAccountId":"A1D4XY4NEBABI9","productName":"LocusMaps Android SDK","productVersion":"3.2.51","deviceTimezone":"America\/Los_Angeles","deviceOSName":"Android","deviceOSVersion":"28","uiLocale":"en_US","browserName":null,"browserVersion":null,"kioskName":null,"kioskLocation":null,"hostAppId":"com.united.mobile.android.UnitedApplication","hostAppVersion":"4.1.102","hostAppProperties":{}}|
+04-28 21:18:12.121  3123  3123 D AppCompatDelegate: Checking for metadata for AppLocalesMetadataHolderService : Service not found
+04-28 21:18:12.279  3123  3123 D OpenGLRenderer: HWUI GL Pipeline
+04-28 21:18:12.294  3123  3123 W BMP:MotionListener: Unreliable motion sensors data...
+04-28 21:18:12.295  3123  3123 W BMP:OrientationListener: Unreliable orientation sensor data...
+04-28 21:18:12.334  3123  3123 W BMP:MotionListener: Unreliable motion sensors data...
+04-28 21:18:12.334  3123  3123 W BMP:OrientationListener: Unreliable orientation sensor data...
+04-28 21:18:12.342  3123  3218 D         : HostConnection::get() New Host Connection established 0x797bb008ec20, tid 3218
+04-28 21:18:12.345  3123  3218 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasWideColorDisplay retrieved: 0
+04-28 21:18:12.345  3123  3218 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasHDRDisplay retrieved: 0
+04-28 21:18:12.345  3123  3218 I OpenGLRenderer: Initialized EGL, version 1.4
+04-28 21:18:12.345  3123  3218 D OpenGLRenderer: Swap behavior 1
+04-28 21:18:12.345  3123  3218 W OpenGLRenderer: Failed to choose config with EGL_SWAP_BEHAVIOR_PRESERVED, retrying without...
+04-28 21:18:12.345  3123  3218 D OpenGLRenderer: Swap behavior 0
+04-28 21:18:12.360  3123  3218 D EGL_emulation: eglCreateContext: 0x797bb9bf8ce0: maj 2 min 0 rcv 2
+04-28 21:18:12.374  3123  3218 D EGL_emulation: eglMakeCurrent: 0x797bb9bf8ce0: ver 2 0 (tinfo 0x797bb00e35c0)
+04-28 21:18:12.385  3123  3158 I WM-WorkerWrapper: Worker result FAILURE for Work [ id=a5c36429-9503-44e7-ae5f-1569caee685e, tags={ com.locuslabs.sdk.llprivate.analyticsevents.AnalyticsEventSynchronizer$AnalyticsEventSyncWorker } ]
+04-28 21:18:12.412  3123  3218 D EGL_emulation: eglMakeCurrent: 0x797bb9bf8ce0: ver 2 0 (tinfo 0x797bb00e35c0)
+04-28 21:18:12.484  3123  3123 W locuslabs: LocusMaps warning stack trace: |java.net.ConnectException: Failed to connect to rest.locuslabs.com/:::443
+04-28 21:18:12.484  3123  3123 W locuslabs: 	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.kt:297)
+04-28 21:18:12.484  3123  3123 W locuslabs: 	at okhttp3.internal.connection.RealConnection.connect(RealConnection.kt:207)
+04-28 21:18:12.484  3123  3123 W locuslabs: 	at okhttp3.internal.connection.ExchangeFinder.findConnection(ExchangeFinder.kt:226)
+04-28 21:18:12.484  3123  3123 W locuslabs: 	at okhttp3.internal.connection.ExchangeFinder.findHealthyConnection(ExchangeFinder.kt:106)
+04-28 21:18:12.484  3123  3123 W locuslabs: 	at okhttp3.internal.connection.ExchangeFinder.find(ExchangeFinder.kt:74)
+04-28 21:18:12.484  3123  3123 W locuslabs: 	at okhttp3.internal.connection.RealCall.initExchange$okhttp(RealCall.kt:255)
+04-28 21:18:12.484  3123  3123 W locuslabs: 	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.kt:32)
+04-28 21:18:12.484  3123  3123 W locuslabs: 	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+04-28 21:18:12.484  3123  3123 W locuslabs: 	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.kt:95)
+04-28 21:18:12.484  3123  3123 W locuslabs: 	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+04-28 21:18:12.484  3123  3123 W locuslabs: 	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.kt:83)
+04-28 21:18:12.484  3123  3123 W locuslabs: 	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+04-28 21:18:12.484  3123  3123 W locuslabs: 	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.kt:76)
+04-28 21:18:12.484  3123  3123 W locuslabs: 	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+04-28 21:18:12.484  3123  3123 W locuslabs: 	at okhttp3.internal.connection.RealCall.getResponseWithInterceptorChain$okhttp(RealCall.kt:201)
+04-28 21:18:12.484  3123  3123 W locuslabs: 	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:517)
+04-28 21:18:12.484  3123  3123 W locuslabs: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+04-28 21:18:12.484  3123  3123 W locuslabs: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+04-28 21:18:12.484  3123  3123 W locuslabs: 	at java.lang.Thread.run(Thread.java:764)
+04-28 21:18:12.484  3123  3123 W locuslabs: 	Suppressed: java.net.ConnectException: Failed to connect to rest.locuslabs.com/0.0.0.0:443
+04-28 21:18:12.484  3123  3123 W locuslabs: 		... 19 more
+04-28 21:18:12.484  3123  3123 W locuslabs: 	Caused by: java.net.ConnectException: failed to connect to localhost/127.0.0.1 (port 443) from /127.0.0.1 (port 38726) after 10000ms: isConnected failed: ECONNREFUSED (Connection refused)
+04-28 21:18:12.484  3123  3123 W locuslabs: 		at libcore.io.IoBridge.isConnected(IoBridge.java:278)
+04-28 21:18:12.484  3123  3123 W locuslabs: 		at libcore.io.IoBridge.connectErrno(IoBridge.java:187)
+04-28 21:18:12.484  3123  3123 W locuslabs: 		at libcore.io.IoBridge.connect(IoBridge.java:129)
+04-28 21:18:12.484  3123  3123 W locuslabs: 		at java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:137)
+04-28 21:18:12.484  3123  3123 W locuslabs: 		at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:390)
+04-28 21:18:12.484  3123  3123 W locuslabs: 		at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:228)
+04-28 21:18:12.484  3123  3123 W locuslabs: 		at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:212)
+04-28 21:18:12.484  3123  3123 W locuslabs: 		at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:436)
+04-28 21:18:12.484  3123  3123 W locuslabs: 		at java.net.Socket.connect(Socket.java:621)
+04-28 21:18:12.484  3123  3123 W locuslabs: 		at okhttp3.internal.platform.AndroidPlatform.connectSocket(AndroidPlatform.kt:63)
+04-28 21:18:12.484  3123  3123 W locuslabs: 		at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.kt:295)
+04-28 21:18:12.484  3123  3123 W locuslabs: 		... 18 more
+04-28 21:18:12.484  3123  3123 W locuslabs: 	Caused by: android.system.ErrnoException: isConnected failed: ECONNREFUSED (Connection refused)
+04-28 21:18:12.484  3123  3123 W locuslabs: 		at libcore.io.IoBridge.isConnected(IoBridge.java:267)
+04-28 21:18:12.484  3123  3123 W locuslabs: 		... 28 more
+04-28 21:18:12.484  3123  3123 W locuslabs: Caused by: java.net.ConnectException: failed to connect to localhost/127.0.0.1 (port 443) from /127.0.0.1 (port 38728) after 10000ms: isConnected failed: ECONNREFUSED (Connection refused)
+04-28 21:18:12.484  3123  3123 W locuslabs: 	at libcore.io.IoBridge.isConnected(IoBridge.java:278)
+04-28 21:18:12.484  3123  3123 W locuslabs: 	at libcore.io.IoBridge.connectErrno(IoBridge.java:187)
+04-28 21:18:12.484  3123  3123 W locuslabs: 	at libcore.io.IoBridge.connect(IoBridge.java:129)
+04-28 21:18:12.484  3123  3123 W locuslabs: 	at java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:137)
+04-28 21:18:12.484  3123  3123 W locuslabs: 	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:390)
+04-28 21:18:12.484  3123  3123 W locuslabs: 	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:228)
+04-28 21:18:12.484  3123  3123 W locuslabs: 	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:212)
+04-28 21:18:12.484  3123  3123 W locuslabs: 	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:436)
+04-28 21:18:12.484  3123  3123 W locuslabs: 	at java.net.Socket.connect(Socket.java:621)
+04-28 21:18:12.484  3123  3123 W locuslabs: 	at okhttp3.internal.platform.AndroidPlatform.connectSocket(AndroidPlatform.kt:63)
+04-28 21:18:12.484  3123  3123 W locuslabs: 	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.kt:295)
+04-28 21:18:12.484  3123  3123 W locuslabs: 	... 18 more
+04-28 21:18:12.484  3123  3123 W locuslabs: Caused by: android.system.ErrnoException: isConnected failed: ECONNREFUSED (Connection refused)
+04-28 21:18:12.484  3123  3123 W locuslabs: 	at libcore.io.IoBridge.isConnected(IoBridge.java:267)
+04-28 21:18:12.484  3123  3123 W locuslabs: 	... 28 more
+04-28 21:18:12.484  3123  3123 W locuslabs: |
+04-28 21:18:12.484  3123  3123 W locuslabs: LocusMaps warning stack trace cause: |java.net.ConnectException: failed to connect to localhost/127.0.0.1 (port 443) from /127.0.0.1 (port 38728) after 10000ms: isConnected failed: ECONNREFUSED (Connection refused)
+04-28 21:18:12.484  3123  3123 W locuslabs: 	at libcore.io.IoBridge.isConnected(IoBridge.java:278)
+04-28 21:18:12.484  3123  3123 W locuslabs: 	at libcore.io.IoBridge.connectErrno(IoBridge.java:187)
+04-28 21:18:12.484  3123  3123 W locuslabs: 	at libcore.io.IoBridge.connect(IoBridge.java:129)
+04-28 21:18:12.484  3123  3123 W locuslabs: 	at java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:137)
+04-28 21:18:12.484  3123  3123 W locuslabs: 	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:390)
+04-28 21:18:12.484  3123  3123 W locuslabs: 	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:228)
+04-28 21:18:12.484  3123  3123 W locuslabs: 	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:212)
+04-28 21:18:12.484  3123  3123 W locuslabs: 	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:436)
+04-28 21:18:12.484  3123  3123 W locuslabs: 	at java.net.Socket.connect(Socket.java:621)
+04-28 21:18:12.484  3123  3123 W locuslabs: 	at okhttp3.internal.platform.AndroidPlatform.connectSocket(AndroidPlatform.kt:63)
+04-28 21:18:12.484  3123  3123 W locuslabs: 	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.kt:295)
+04-28 21:18:12.484  3123  3123 W locuslabs: 	at okhttp3.internal.connection.RealConnection.connect(RealConnection.kt:207)
+04-28 21:18:12.484  3123  3123 W locuslabs: 	at okhttp3.internal.connection.ExchangeFinder.findConnection(ExchangeFinder.kt:226)
+04-28 21:18:12.484  3123  3123 W locuslabs: 	at okhttp3.internal.connection.ExchangeFinder.findHealthyConnection(ExchangeFinder.kt:106)
+04-28 21:18:12.484  3123  3123 W locuslabs: 	at okhttp3.internal.connection.ExchangeFinder.find(ExchangeFinder.kt:74)
+04-28 21:18:12.484  3123  3123 W locuslabs: 	at okhttp3.internal.connection.RealCall.initExchange$okhttp(RealCall.kt:255)
+04-28 21:18:12.484  3123  3123 W locuslabs: 	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.kt:32)
+04-28 21:18:12.484  3123  3123 W locuslabs: 	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+04-28 21:18:12.484  3123  3123 W locuslabs: 	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.kt:95)
+04-28 21:18:12.484  3123  3123 W locuslabs: 	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+04-28 21:18:12.484  3123  3123 W locuslabs: 	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.kt:83)
+04-28 21:18:12.484  3123  3123 W locuslabs: 	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+04-28 21:18:12.484  3123  3123 W locuslabs: 	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.kt:76)
+04-28 21:18:12.484  3123  3123 W locuslabs: 	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+04-28 21:18:12.484  3123  3123 W locuslabs: 	at okhttp3.internal.connection.RealCall.getResponseWithInterceptorChain$okhttp(RealCall.kt:201)
+04-28 21:18:12.484  3123  3123 W locuslabs: 	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:517)
+04-28 21:18:12.484  3123  3123 W locuslabs: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+04-28 21:18:12.484  3123  3123 W locuslabs: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+04-28 21:18:12.484  3123  3123 W locuslabs: 	at java.lang.Thread.run(Thread.java:764)
+04-28 21:18:12.484  3123  3123 W locuslabs: Caused by: android.system.ErrnoException: isConnected failed: ECONNREFUSED (Connection refused)
+04-28 21:18:12.484  3123  3123 W locuslabs: 	at libcore.io.IoBridge.isConnected(IoBridge.java:267)
+04-28 21:18:12.484  3123  3123 W locuslabs: 	... 28 more
+04-28 21:18:12.484  3123  3123 W locuslabs: |
+04-28 21:18:12.772  3123  3123 W ActivityThread: handleWindowVisibility: no activity for token android.os.BinderProxy@f5cdbc3
+04-28 21:18:12.830  3123  3123 W AndroidKeysetManager: keyset not found, will generate a new one
+04-28 21:18:12.830  3123  3123 W AndroidKeysetManager: java.io.FileNotFoundException: can't read keyset; the pref value __androidx_security_crypto_encrypted_prefs_key_keyset__ does not exist
+04-28 21:18:12.830  3123  3123 W AndroidKeysetManager: 	at com.google.crypto.tink.integration.android.SharedPrefKeysetReader.readPref(SharedPrefKeysetReader.java:71)
+04-28 21:18:12.830  3123  3123 W AndroidKeysetManager: 	at com.google.crypto.tink.integration.android.SharedPrefKeysetReader.readEncrypted(SharedPrefKeysetReader.java:89)
+04-28 21:18:12.830  3123  3123 W AndroidKeysetManager: 	at com.google.crypto.tink.KeysetHandle.read(KeysetHandle.java:105)
+04-28 21:18:12.830  3123  3123 W AndroidKeysetManager: 	at com.google.crypto.tink.integration.android.AndroidKeysetManager$Builder.read(AndroidKeysetManager.java:304)
+04-28 21:18:12.830  3123  3123 W AndroidKeysetManager: 	at com.google.crypto.tink.integration.android.AndroidKeysetManager$Builder.readOrGenerateNewKeyset(AndroidKeysetManager.java:280)
+04-28 21:18:12.830  3123  3123 W AndroidKeysetManager: 	at com.google.crypto.tink.integration.android.AndroidKeysetManager$Builder.build(AndroidKeysetManager.java:230)
+04-28 21:18:12.830  3123  3123 W AndroidKeysetManager: 	at androidx.security.crypto.EncryptedSharedPreferences.create(EncryptedSharedPreferences.java:121)
+04-28 21:18:12.830  3123  3123 W AndroidKeysetManager: 	at com.united.mobile.android.appcore.repository.omnicart.OmniCartRepository$Companion$getOmniCartRepository$sharedPreferences$2.invoke(OmniCartRepository.kt:88)
+04-28 21:18:12.830  3123  3123 W AndroidKeysetManager: 	at com.united.mobile.android.appcore.repository.omnicart.OmniCartRepository$Companion$getOmniCartRepository$sharedPreferences$2.invoke(OmniCartRepository.kt:84)
+04-28 21:18:12.830  3123  3123 W AndroidKeysetManager: 	at kotlin.SynchronizedLazyImpl.getValue(LazyJVM.kt:74)
+04-28 21:18:12.830  3123  3123 W AndroidKeysetManager: 	at com.united.mobile.android.appcore.repository.omnicart.OmniCartRepository$Companion.getOmniCartRepository$lambda-0(OmniCartRepository.kt:84)
+04-28 21:18:12.830  3123  3123 W AndroidKeysetManager: 	at com.united.mobile.android.appcore.repository.omnicart.OmniCartRepository$Companion.getOmniCartRepository(OmniCartRepository.kt:97)
+04-28 21:18:12.830  3123  3123 W AndroidKeysetManager: 	at com.united.mobile.android.ui.main.MainActivityViewModelFactory$getMainActivityViewModelFactory$1.create(MainActivityViewModelFactory.kt:50)
+04-28 21:18:12.830  3123  3123 W AndroidKeysetManager: 	at androidx.lifecycle.AbstractSavedStateViewModelFactory.create(AbstractSavedStateViewModelFactory.java:97)
+04-28 21:18:12.830  3123  3123 W AndroidKeysetManager: 	at androidx.lifecycle.AbstractSavedStateViewModelFactory.create(AbstractSavedStateViewModelFactory.java:87)
+04-28 21:18:12.830  3123  3123 W AndroidKeysetManager: 	at androidx.lifecycle.ViewModelProvider.get(ViewModelProvider.kt:187)
+04-28 21:18:12.830  3123  3123 W AndroidKeysetManager: 	at androidx.lifecycle.ViewModelProvider.get(ViewModelProvider.kt:153)
+04-28 21:18:12.830  3123  3123 W AndroidKeysetManager: 	at androidx.lifecycle.ViewModelLazy.getValue(ViewModelLazy.kt:53)
+04-28 21:18:12.830  3123  3123 W AndroidKeysetManager: 	at androidx.lifecycle.ViewModelLazy.getValue(ViewModelLazy.kt:35)
+04-28 21:18:12.830  3123  3123 W AndroidKeysetManager: 	at com.united.mobile.android.ui.main.MainActivity.getMainActivityViewModel(MainActivity.kt:176)
+04-28 21:18:12.830  3123  3123 W AndroidKeysetManager: 	at com.united.mobile.android.ui.main.MainActivity.checkForNotificationsPermission(MainActivity.kt:821)
+04-28 21:18:12.830  3123  3123 W AndroidKeysetManager: 	at com.united.mobile.android.ui.main.MainActivity.onCreate(MainActivity.kt:183)
+04-28 21:18:12.830  3123  3123 W AndroidKeysetManager: 	at android.app.Activity.performCreate(Activity.java:7136)
+04-28 21:18:12.830  3123  3123 W AndroidKeysetManager: 	at android.app.Activity.performCreate(Activity.java:7127)
+04-28 21:18:12.830  3123  3123 W AndroidKeysetManager: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+04-28 21:18:12.830  3123  3123 W AndroidKeysetManager: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2893)
+04-28 21:18:12.830  3123  3123 W AndroidKeysetManager: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3048)
+04-28 21:18:12.830  3123  3123 W AndroidKeysetManager: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+04-28 21:18:12.830  3123  3123 W AndroidKeysetManager: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+04-28 21:18:12.830  3123  3123 W AndroidKeysetManager: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+04-28 21:18:12.830  3123  3123 W AndroidKeysetManager: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+04-28 21:18:12.830  3123  3123 W AndroidKeysetManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+04-28 21:18:12.830  3123  3123 W AndroidKeysetManager: 	at android.os.Looper.loop(Looper.java:193)
+04-28 21:18:12.830  3123  3123 W AndroidKeysetManager: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+04-28 21:18:12.830  3123  3123 W AndroidKeysetManager: 	at java.lang.reflect.Method.invoke(Native Method)
+04-28 21:18:12.830  3123  3123 W AndroidKeysetManager: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+04-28 21:18:12.830  3123  3123 W AndroidKeysetManager: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+04-28 21:18:12.852  3123  3123 W AndroidKeysetManager: keyset not found, will generate a new one
+04-28 21:18:12.852  3123  3123 W AndroidKeysetManager: java.io.FileNotFoundException: can't read keyset; the pref value __androidx_security_crypto_encrypted_prefs_value_keyset__ does not exist
+04-28 21:18:12.852  3123  3123 W AndroidKeysetManager: 	at com.google.crypto.tink.integration.android.SharedPrefKeysetReader.readPref(SharedPrefKeysetReader.java:71)
+04-28 21:18:12.852  3123  3123 W AndroidKeysetManager: 	at com.google.crypto.tink.integration.android.SharedPrefKeysetReader.readEncrypted(SharedPrefKeysetReader.java:89)
+04-28 21:18:12.852  3123  3123 W AndroidKeysetManager: 	at com.google.crypto.tink.KeysetHandle.read(KeysetHandle.java:105)
+04-28 21:18:12.852  3123  3123 W AndroidKeysetManager: 	at com.google.crypto.tink.integration.android.AndroidKeysetManager$Builder.read(AndroidKeysetManager.java:304)
+04-28 21:18:12.852  3123  3123 W AndroidKeysetManager: 	at com.google.crypto.tink.integration.android.AndroidKeysetManager$Builder.readOrGenerateNewKeyset(AndroidKeysetManager.java:280)
+04-28 21:18:12.852  3123  3123 W AndroidKeysetManager: 	at com.google.crypto.tink.integration.android.AndroidKeysetManager$Builder.build(AndroidKeysetManager.java:230)
+04-28 21:18:12.852  3123  3123 W AndroidKeysetManager: 	at androidx.security.crypto.EncryptedSharedPreferences.create(EncryptedSharedPreferences.java:126)
+04-28 21:18:12.852  3123  3123 W AndroidKeysetManager: 	at com.united.mobile.android.appcore.repository.omnicart.OmniCartRepository$Companion$getOmniCartRepository$sharedPreferences$2.invoke(OmniCartRepository.kt:88)
+04-28 21:18:12.852  3123  3123 W AndroidKeysetManager: 	at com.united.mobile.android.appcore.repository.omnicart.OmniCartRepository$Companion$getOmniCartRepository$sharedPreferences$2.invoke(OmniCartRepository.kt:84)
+04-28 21:18:12.852  3123  3123 W AndroidKeysetManager: 	at kotlin.SynchronizedLazyImpl.getValue(LazyJVM.kt:74)
+04-28 21:18:12.852  3123  3123 W AndroidKeysetManager: 	at com.united.mobile.android.appcore.repository.omnicart.OmniCartRepository$Companion.getOmniCartRepository$lambda-0(OmniCartRepository.kt:84)
+04-28 21:18:12.852  3123  3123 W AndroidKeysetManager: 	at com.united.mobile.android.appcore.repository.omnicart.OmniCartRepository$Companion.getOmniCartRepository(OmniCartRepository.kt:97)
+04-28 21:18:12.852  3123  3123 W AndroidKeysetManager: 	at com.united.mobile.android.ui.main.MainActivityViewModelFactory$getMainActivityViewModelFactory$1.create(MainActivityViewModelFactory.kt:50)
+04-28 21:18:12.852  3123  3123 W AndroidKeysetManager: 	at androidx.lifecycle.AbstractSavedStateViewModelFactory.create(AbstractSavedStateViewModelFactory.java:97)
+04-28 21:18:12.852  3123  3123 W AndroidKeysetManager: 	at androidx.lifecycle.AbstractSavedStateViewModelFactory.create(AbstractSavedStateViewModelFactory.java:87)
+04-28 21:18:12.852  3123  3123 W AndroidKeysetManager: 	at androidx.lifecycle.ViewModelProvider.get(ViewModelProvider.kt:187)
+04-28 21:18:12.852  3123  3123 W AndroidKeysetManager: 	at androidx.lifecycle.ViewModelProvider.get(ViewModelProvider.kt:153)
+04-28 21:18:12.852  3123  3123 W AndroidKeysetManager: 	at androidx.lifecycle.ViewModelLazy.getValue(ViewModelLazy.kt:53)
+04-28 21:18:12.852  3123  3123 W AndroidKeysetManager: 	at androidx.lifecycle.ViewModelLazy.getValue(ViewModelLazy.kt:35)
+04-28 21:18:12.852  3123  3123 W AndroidKeysetManager: 	at com.united.mobile.android.ui.main.MainActivity.getMainActivityViewModel(MainActivity.kt:176)
+04-28 21:18:12.852  3123  3123 W AndroidKeysetManager: 	at com.united.mobile.android.ui.main.MainActivity.checkForNotificationsPermission(MainActivity.kt:821)
+04-28 21:18:12.852  3123  3123 W AndroidKeysetManager: 	at com.united.mobile.android.ui.main.MainActivity.onCreate(MainActivity.kt:183)
+04-28 21:18:12.852  3123  3123 W AndroidKeysetManager: 	at android.app.Activity.performCreate(Activity.java:7136)
+04-28 21:18:12.852  3123  3123 W AndroidKeysetManager: 	at android.app.Activity.performCreate(Activity.java:7127)
+04-28 21:18:12.852  3123  3123 W AndroidKeysetManager: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+04-28 21:18:12.852  3123  3123 W AndroidKeysetManager: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2893)
+04-28 21:18:12.852  3123  3123 W AndroidKeysetManager: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3048)
+04-28 21:18:12.852  3123  3123 W AndroidKeysetManager: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+04-28 21:18:12.852  3123  3123 W AndroidKeysetManager: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+04-28 21:18:12.852  3123  3123 W AndroidKeysetManager: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+04-28 21:18:12.852  3123  3123 W AndroidKeysetManager: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+04-28 21:18:12.852  3123  3123 W AndroidKeysetManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+04-28 21:18:12.852  3123  3123 W AndroidKeysetManager: 	at android.os.Looper.loop(Looper.java:193)
+04-28 21:18:12.852  3123  3123 W AndroidKeysetManager: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+04-28 21:18:12.852  3123  3123 W AndroidKeysetManager: 	at java.lang.reflect.Method.invoke(Native Method)
+04-28 21:18:12.852  3123  3123 W AndroidKeysetManager: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+04-28 21:18:12.852  3123  3123 W AndroidKeysetManager: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+04-28 21:18:12.867  3123  3123 I EngineFactory: Provider GmsCore_OpenSSL not available
+04-28 21:18:12.899  3123  3123 W GooglePlayServicesUtil: com.united.mobile.android requires the Google Play Store, but it is missing.
+04-28 21:18:12.899  3123  3123 E DynamiteModule: Invalid GmsCore APK, remote loading disabled.
+04-28 21:18:12.927  3123  3123 I WebViewFactory: Loading com.android.webview version 66.0.3359.158 (code 336015865)
+04-28 21:18:12.950  3123  3123 I .mobile.androi: The ClassLoaderContext is a special shared library.
+04-28 21:18:12.974  3123  3142 W FirebaseInstanceId: Failed to find package android.content.pm.PackageManager$NameNotFoundException: com.google.android.gms
+04-28 21:18:12.980  3123  3259 W FirebaseInstanceId: Failed to find package android.content.pm.PackageManager$NameNotFoundException: com.google.android.gms
+04-28 21:18:12.981  3123  3259 E FirebaseInstanceId: Google Play services missing or without correct permission.
+04-28 21:18:13.006  3123  3123 I cr_LibraryLoader: Time to load native libraries: 11 ms (timestamps 5543-5554)
+04-28 21:18:13.015  3123  3123 I chromium: [INFO:library_loader_hooks.cc(36)] Chromium logging enabled: level = 0, default verbosity = 0
+04-28 21:18:13.015  3123  3123 I cr_LibraryLoader: Expected native library version number "66.0.3359.158", actual native library version number "66.0.3359.158"
+04-28 21:18:13.026  3123  3263 W cr_ChildProcLH: Create a new ChildConnectionAllocator with package name = com.android.webview, sandboxed = true
+04-28 21:18:13.027  3123  3123 I cr_BrowserStartup: Initializing chromium process, singleProcess=false
+04-28 21:18:13.027  3123  3123 I cr_base : Android Locale: en_US requires .pak files: []
+04-28 21:18:13.076  3123  3293 W cr_CrashFileManager: /data/user/0/com.united.mobile.android/cache/WebView/Crash Reports does not exist or is not a directory
+04-28 21:18:13.079  3123  3294 E chromium: [ERROR:devtools_http_handler.cc(292)] Cannot start http server for devtools. Stop devtools.
+04-28 21:18:13.095  3123  3256 W GooglePlayServicesUtil: com.united.mobile.android requires the Google Play Store, but it is missing.
+04-28 21:18:13.096  3123  3297 W GooglePlayServicesUtil: com.united.mobile.android requires the Google Play Store, but it is missing.
+04-28 21:18:13.097  3123  3297 W GoogleApiManager: The service for com.google.android.gms.internal.appset.zzd is not available: ConnectionResult{statusCode=SERVICE_INVALID, resolution=null, message=null}
+04-28 21:18:13.127  3123  3285 E BluetoothAdapter: Bluetooth binder is null
+04-28 21:18:13.133  3123  3301 D         : HostConnection::get() New Host Connection established 0x797b9c9c0f80, tid 3301
+04-28 21:18:13.133  3123  3289 E cr_ApiBridge: Failed to init handler: Attempt to invoke virtual method 'java.lang.reflect.Constructor java.lang.Class.getDeclaredConstructor(java.lang.Class[])' on a null object reference
+04-28 21:18:13.133  3123  3301 E chromium: [ERROR:gl_surface_egl.cc(320)] eglChooseConfig failed with error EGL_SUCCESS
+04-28 21:18:13.182  3123  3301 D EGL_emulation: eglCreateContext: 0x797b9c97ba40: maj 2 min 0 rcv 2
+04-28 21:18:13.183  3123  3301 D EGL_emulation: eglMakeCurrent: 0x797b9c97ba40: ver 2 0 (tinfo 0x797b94be2940)
+04-28 21:18:13.205  3123  3297 W GooglePlayServicesUtil: com.united.mobile.android requires the Google Play Store, but it is missing.
+04-28 21:18:13.205  3123  3297 W GoogleApiManager: The service for com.google.android.gms.internal.location.zzaz is not available: ConnectionResult{statusCode=SERVICE_INVALID, resolution=null, message=null}
+04-28 21:18:13.207  3123  3314 W GooglePlayServicesUtil: com.united.mobile.android requires the Google Play Store, but it is missing.
+04-28 21:18:13.212  3123  3301 W VideoCapabilities: Unrecognized profile 4 for video/hevc
+04-28 21:18:13.218  3123  3301 I VideoCapabilities: Unsupported profile 4 for video/mp4v-es
+04-28 21:18:13.220  3123  3301 W cr_MediaCodecUtil: HW encoder for video/avc is not available on this device.
+04-28 21:18:14.704  3123  3123 W AndroidKeysetManager: keyset not found, will generate a new one
+04-28 21:18:14.704  3123  3123 W AndroidKeysetManager: java.io.FileNotFoundException: can't read keyset; the pref value __androidx_security_crypto_encrypted_prefs_key_keyset__ does not exist
+04-28 21:18:14.704  3123  3123 W AndroidKeysetManager: 	at com.google.crypto.tink.integration.android.SharedPrefKeysetReader.readPref(SharedPrefKeysetReader.java:71)
+04-28 21:18:14.704  3123  3123 W AndroidKeysetManager: 	at com.google.crypto.tink.integration.android.SharedPrefKeysetReader.readEncrypted(SharedPrefKeysetReader.java:89)
+04-28 21:18:14.704  3123  3123 W AndroidKeysetManager: 	at com.google.crypto.tink.KeysetHandle.read(KeysetHandle.java:105)
+04-28 21:18:14.704  3123  3123 W AndroidKeysetManager: 	at com.google.crypto.tink.integration.android.AndroidKeysetManager$Builder.read(AndroidKeysetManager.java:304)
+04-28 21:18:14.704  3123  3123 W AndroidKeysetManager: 	at com.google.crypto.tink.integration.android.AndroidKeysetManager$Builder.readOrGenerateNewKeyset(AndroidKeysetManager.java:280)
+04-28 21:18:14.704  3123  3123 W AndroidKeysetManager: 	at com.google.crypto.tink.integration.android.AndroidKeysetManager$Builder.build(AndroidKeysetManager.java:230)
+04-28 21:18:14.704  3123  3123 W AndroidKeysetManager: 	at androidx.security.crypto.EncryptedSharedPreferences.create(EncryptedSharedPreferences.java:121)
+04-28 21:18:14.704  3123  3123 W AndroidKeysetManager: 	at com.united.mobile.android.flightstatus.repository.PCUSharedRepositoryImpl$offerCachePreferences$2.invoke(PCUSharedRepositoryImpl.kt:43)
+04-28 21:18:14.704  3123  3123 W AndroidKeysetManager: 	at com.united.mobile.android.flightstatus.repository.PCUSharedRepositoryImpl$offerCachePreferences$2.invoke(PCUSharedRepositoryImpl.kt:39)
+04-28 21:18:14.704  3123  3123 W AndroidKeysetManager: 	at kotlin.SynchronizedLazyImpl.getValue(LazyJVM.kt:74)
+04-28 21:18:14.704  3123  3123 W AndroidKeysetManager: 	at com.united.mobile.android.flightstatus.repository.PCUSharedRepositoryImpl.getOfferCachePreferences(PCUSharedRepositoryImpl.kt:39)
+04-28 21:18:14.704  3123  3123 W AndroidKeysetManager: 	at com.united.mobile.android.flightstatus.repository.PCUSharedRepositoryImpl.removeOfferCacheIfExpired(PCUSharedRepositoryImpl.kt:96)
+04-28 21:18:14.704  3123  3123 W AndroidKeysetManager: 	at com.united.mobile.android.flightstatus.repository.PCUSharedRepositoryImpl.clearExpiredData(PCUSharedRepositoryImpl.kt:91)
+04-28 21:18:14.704  3123  3123 W AndroidKeysetManager: 	at com.united.mobile.android.ui.main.MainActivity.clearPCUFlightStatusSharedPrefs(MainActivity.kt:959)
+04-28 21:18:14.704  3123  3123 W AndroidKeysetManager: 	at com.united.mobile.android.ui.main.MainActivity.onCreate(MainActivity.kt:219)
+04-28 21:18:14.704  3123  3123 W AndroidKeysetManager: 	at android.app.Activity.performCreate(Activity.java:7136)
+04-28 21:18:14.704  3123  3123 W AndroidKeysetManager: 	at android.app.Activity.performCreate(Activity.java:7127)
+04-28 21:18:14.704  3123  3123 W AndroidKeysetManager: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+04-28 21:18:14.704  3123  3123 W AndroidKeysetManager: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2893)
+04-28 21:18:14.704  3123  3123 W AndroidKeysetManager: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3048)
+04-28 21:18:14.704  3123  3123 W AndroidKeysetManager: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+04-28 21:18:14.704  3123  3123 W AndroidKeysetManager: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+04-28 21:18:14.704  3123  3123 W AndroidKeysetManager: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+04-28 21:18:14.704  3123  3123 W AndroidKeysetManager: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+04-28 21:18:14.704  3123  3123 W AndroidKeysetManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+04-28 21:18:14.704  3123  3123 W AndroidKeysetManager: 	at android.os.Looper.loop(Looper.java:193)
+04-28 21:18:14.704  3123  3123 W AndroidKeysetManager: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+04-28 21:18:14.704  3123  3123 W AndroidKeysetManager: 	at java.lang.reflect.Method.invoke(Native Method)
+04-28 21:18:14.704  3123  3123 W AndroidKeysetManager: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+04-28 21:18:14.704  3123  3123 W AndroidKeysetManager: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+04-28 21:18:14.720  3123  3123 W AndroidKeysetManager: keyset not found, will generate a new one
+04-28 21:18:14.720  3123  3123 W AndroidKeysetManager: java.io.FileNotFoundException: can't read keyset; the pref value __androidx_security_crypto_encrypted_prefs_value_keyset__ does not exist
+04-28 21:18:14.720  3123  3123 W AndroidKeysetManager: 	at com.google.crypto.tink.integration.android.SharedPrefKeysetReader.readPref(SharedPrefKeysetReader.java:71)
+04-28 21:18:14.720  3123  3123 W AndroidKeysetManager: 	at com.google.crypto.tink.integration.android.SharedPrefKeysetReader.readEncrypted(SharedPrefKeysetReader.java:89)
+04-28 21:18:14.720  3123  3123 W AndroidKeysetManager: 	at com.google.crypto.tink.KeysetHandle.read(KeysetHandle.java:105)
+04-28 21:18:14.720  3123  3123 W AndroidKeysetManager: 	at com.google.crypto.tink.integration.android.AndroidKeysetManager$Builder.read(AndroidKeysetManager.java:304)
+04-28 21:18:14.720  3123  3123 W AndroidKeysetManager: 	at com.google.crypto.tink.integration.android.AndroidKeysetManager$Builder.readOrGenerateNewKeyset(AndroidKeysetManager.java:280)
+04-28 21:18:14.720  3123  3123 W AndroidKeysetManager: 	at com.google.crypto.tink.integration.android.AndroidKeysetManager$Builder.build(AndroidKeysetManager.java:230)
+04-28 21:18:14.720  3123  3123 W AndroidKeysetManager: 	at androidx.security.crypto.EncryptedSharedPreferences.create(EncryptedSharedPreferences.java:126)
+04-28 21:18:14.720  3123  3123 W AndroidKeysetManager: 	at com.united.mobile.android.flightstatus.repository.PCUSharedRepositoryImpl$offerCachePreferences$2.invoke(PCUSharedRepositoryImpl.kt:43)
+04-28 21:18:14.720  3123  3123 W AndroidKeysetManager: 	at com.united.mobile.android.flightstatus.repository.PCUSharedRepositoryImpl$offerCachePreferences$2.invoke(PCUSharedRepositoryImpl.kt:39)
+04-28 21:18:14.720  3123  3123 W AndroidKeysetManager: 	at kotlin.SynchronizedLazyImpl.getValue(LazyJVM.kt:74)
+04-28 21:18:14.720  3123  3123 W AndroidKeysetManager: 	at com.united.mobile.android.flightstatus.repository.PCUSharedRepositoryImpl.getOfferCachePreferences(PCUSharedRepositoryImpl.kt:39)
+04-28 21:18:14.720  3123  3123 W AndroidKeysetManager: 	at com.united.mobile.android.flightstatus.repository.PCUSharedRepositoryImpl.removeOfferCacheIfExpired(PCUSharedRepositoryImpl.kt:96)
+04-28 21:18:14.720  3123  3123 W AndroidKeysetManager: 	at com.united.mobile.android.flightstatus.repository.PCUSharedRepositoryImpl.clearExpiredData(PCUSharedRepositoryImpl.kt:91)
+04-28 21:18:14.720  3123  3123 W AndroidKeysetManager: 	at com.united.mobile.android.ui.main.MainActivity.clearPCUFlightStatusSharedPrefs(MainActivity.kt:959)
+04-28 21:18:14.720  3123  3123 W AndroidKeysetManager: 	at com.united.mobile.android.ui.main.MainActivity.onCreate(MainActivity.kt:219)
+04-28 21:18:14.720  3123  3123 W AndroidKeysetManager: 	at android.app.Activity.performCreate(Activity.java:7136)
+04-28 21:18:14.720  3123  3123 W AndroidKeysetManager: 	at android.app.Activity.performCreate(Activity.java:7127)
+04-28 21:18:14.720  3123  3123 W AndroidKeysetManager: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+04-28 21:18:14.720  3123  3123 W AndroidKeysetManager: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2893)
+04-28 21:18:14.720  3123  3123 W AndroidKeysetManager: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3048)
+04-28 21:18:14.720  3123  3123 W AndroidKeysetManager: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+04-28 21:18:14.720  3123  3123 W AndroidKeysetManager: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+04-28 21:18:14.720  3123  3123 W AndroidKeysetManager: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+04-28 21:18:14.720  3123  3123 W AndroidKeysetManager: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+04-28 21:18:14.720  3123  3123 W AndroidKeysetManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+04-28 21:18:14.720  3123  3123 W AndroidKeysetManager: 	at android.os.Looper.loop(Looper.java:193)
+04-28 21:18:14.720  3123  3123 W AndroidKeysetManager: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+04-28 21:18:14.720  3123  3123 W AndroidKeysetManager: 	at java.lang.reflect.Method.invoke(Native Method)
+04-28 21:18:14.720  3123  3123 W AndroidKeysetManager: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+04-28 21:18:14.720  3123  3123 W AndroidKeysetManager: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+04-28 21:18:14.874  3123  3123 W AndroidKeysetManager: keyset not found, will generate a new one
+04-28 21:18:14.874  3123  3123 W AndroidKeysetManager: java.io.FileNotFoundException: can't read keyset; the pref value __androidx_security_crypto_encrypted_prefs_key_keyset__ does not exist
+04-28 21:18:14.874  3123  3123 W AndroidKeysetManager: 	at com.google.crypto.tink.integration.android.SharedPrefKeysetReader.readPref(SharedPrefKeysetReader.java:71)
+04-28 21:18:14.874  3123  3123 W AndroidKeysetManager: 	at com.google.crypto.tink.integration.android.SharedPrefKeysetReader.readEncrypted(SharedPrefKeysetReader.java:89)
+04-28 21:18:14.874  3123  3123 W AndroidKeysetManager: 	at com.google.crypto.tink.KeysetHandle.read(KeysetHandle.java:105)
+04-28 21:18:14.874  3123  3123 W AndroidKeysetManager: 	at com.google.crypto.tink.integration.android.AndroidKeysetManager$Builder.read(AndroidKeysetManager.java:304)
+04-28 21:18:14.874  3123  3123 W AndroidKeysetManager: 	at com.google.crypto.tink.integration.android.AndroidKeysetManager$Builder.readOrGenerateNewKeyset(AndroidKeysetManager.java:280)
+04-28 21:18:14.874  3123  3123 W AndroidKeysetManager: 	at com.google.crypto.tink.integration.android.AndroidKeysetManager$Builder.build(AndroidKeysetManager.java:230)
+04-28 21:18:14.874  3123  3123 W AndroidKeysetManager: 	at androidx.security.crypto.EncryptedSharedPreferences.create(EncryptedSharedPreferences.java:121)
+04-28 21:18:14.874  3123  3123 W AndroidKeysetManager: 	at com.united.mobile.android.booking.repository.sharedrepository.BookingSharedRepositoryImpl$sharedPreference$2.invoke(BookingSharedRepositoryImpl.kt:437)
+04-28 21:18:14.874  3123  3123 W AndroidKeysetManager: 	at com.united.mobile.android.booking.repository.sharedrepository.BookingSharedRepositoryImpl$sharedPreference$2.invoke(BookingSharedRepositoryImpl.kt:433)
+04-28 21:18:14.874  3123  3123 W AndroidKeysetManager: 	at kotlin.SynchronizedLazyImpl.getValue(LazyJVM.kt:74)
+04-28 21:18:14.874  3123  3123 W AndroidKeysetManager: 	at com.united.mobile.android.booking.repository.sharedrepository.BookingSharedRepositoryImpl.getSharedPreference(BookingSharedRepositoryImpl.kt:433)
+04-28 21:18:14.874  3123  3123 W AndroidKeysetManager: 	at com.united.mobile.android.booking.repository.sharedrepository.BookingSharedRepositoryImpl.removeKey(BookingSharedRepositoryImpl.kt:484)
+04-28 21:18:14.874  3123  3123 W AndroidKeysetManager: 	at com.united.mobile.android.ui.main.MainActivity.onResume(MainActivity.kt:311)
+04-28 21:18:14.874  3123  3123 W AndroidKeysetManager: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+04-28 21:18:14.874  3123  3123 W AndroidKeysetManager: 	at android.app.Activity.performResume(Activity.java:7292)
+04-28 21:18:14.874  3123  3123 W AndroidKeysetManager: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+04-28 21:18:14.874  3123  3123 W AndroidKeysetManager: 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3816)
+04-28 21:18:14.874  3123  3123 W AndroidKeysetManager: 	at android.app.servertransaction.ResumeActivityItem.execute(ResumeActivityItem.java:51)
+04-28 21:18:14.874  3123  3123 W AndroidKeysetManager: 	at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:145)
+04-28 21:18:14.874  3123  3123 W AndroidKeysetManager: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:70)
+04-28 21:18:14.874  3123  3123 W AndroidKeysetManager: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+04-28 21:18:14.874  3123  3123 W AndroidKeysetManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+04-28 21:18:14.874  3123  3123 W AndroidKeysetManager: 	at android.os.Looper.loop(Looper.java:193)
+04-28 21:18:14.874  3123  3123 W AndroidKeysetManager: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+04-28 21:18:14.874  3123  3123 W AndroidKeysetManager: 	at java.lang.reflect.Method.invoke(Native Method)
+04-28 21:18:14.874  3123  3123 W AndroidKeysetManager: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+04-28 21:18:14.874  3123  3123 W AndroidKeysetManager: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+04-28 21:18:14.892  3123  3123 W AndroidKeysetManager: keyset not found, will generate a new one
+04-28 21:18:14.892  3123  3123 W AndroidKeysetManager: java.io.FileNotFoundException: can't read keyset; the pref value __androidx_security_crypto_encrypted_prefs_value_keyset__ does not exist
+04-28 21:18:14.892  3123  3123 W AndroidKeysetManager: 	at com.google.crypto.tink.integration.android.SharedPrefKeysetReader.readPref(SharedPrefKeysetReader.java:71)
+04-28 21:18:14.892  3123  3123 W AndroidKeysetManager: 	at com.google.crypto.tink.integration.android.SharedPrefKeysetReader.readEncrypted(SharedPrefKeysetReader.java:89)
+04-28 21:18:14.892  3123  3123 W AndroidKeysetManager: 	at com.google.crypto.tink.KeysetHandle.read(KeysetHandle.java:105)
+04-28 21:18:14.892  3123  3123 W AndroidKeysetManager: 	at com.google.crypto.tink.integration.android.AndroidKeysetManager$Builder.read(AndroidKeysetManager.java:304)
+04-28 21:18:14.892  3123  3123 W AndroidKeysetManager: 	at com.google.crypto.tink.integration.android.AndroidKeysetManager$Builder.readOrGenerateNewKeyset(AndroidKeysetManager.java:280)
+04-28 21:18:14.892  3123  3123 W AndroidKeysetManager: 	at com.google.crypto.tink.integration.android.AndroidKeysetManager$Builder.build(AndroidKeysetManager.java:230)
+04-28 21:18:14.892  3123  3123 W AndroidKeysetManager: 	at androidx.security.crypto.EncryptedSharedPreferences.create(EncryptedSharedPreferences.java:126)
+04-28 21:18:14.892  3123  3123 W AndroidKeysetManager: 	at com.united.mobile.android.booking.repository.sharedrepository.BookingSharedRepositoryImpl$sharedPreference$2.invoke(BookingSharedRepositoryImpl.kt:437)
+04-28 21:18:14.892  3123  3123 W AndroidKeysetManager: 	at com.united.mobile.android.booking.repository.sharedrepository.BookingSharedRepositoryImpl$sharedPreference$2.invoke(BookingSharedRepositoryImpl.kt:433)
+04-28 21:18:14.892  3123  3123 W AndroidKeysetManager: 	at kotlin.SynchronizedLazyImpl.getValue(LazyJVM.kt:74)
+04-28 21:18:14.892  3123  3123 W AndroidKeysetManager: 	at com.united.mobile.android.booking.repository.sharedrepository.BookingSharedRepositoryImpl.getSharedPreference(BookingSharedRepositoryImpl.kt:433)
+04-28 21:18:14.892  3123  3123 W AndroidKeysetManager: 	at com.united.mobile.android.booking.repository.sharedrepository.BookingSharedRepositoryImpl.removeKey(BookingSharedRepositoryImpl.kt:484)
+04-28 21:18:14.892  3123  3123 W AndroidKeysetManager: 	at com.united.mobile.android.ui.main.MainActivity.onResume(MainActivity.kt:311)
+04-28 21:18:14.892  3123  3123 W AndroidKeysetManager: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1412)
+04-28 21:18:14.892  3123  3123 W AndroidKeysetManager: 	at android.app.Activity.performResume(Activity.java:7292)
+04-28 21:18:14.892  3123  3123 W AndroidKeysetManager: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3776)
+04-28 21:18:14.892  3123  3123 W AndroidKeysetManager: 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3816)
+04-28 21:18:14.892  3123  3123 W AndroidKeysetManager: 	at android.app.servertransaction.ResumeActivityItem.execute(ResumeActivityItem.java:51)
+04-28 21:18:14.892  3123  3123 W AndroidKeysetManager: 	at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:145)
+04-28 21:18:14.892  3123  3123 W AndroidKeysetManager: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:70)
+04-28 21:18:14.892  3123  3123 W AndroidKeysetManager: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+04-28 21:18:14.892  3123  3123 W AndroidKeysetManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+04-28 21:18:14.892  3123  3123 W AndroidKeysetManager: 	at android.os.Looper.loop(Looper.java:193)
+04-28 21:18:14.892  3123  3123 W AndroidKeysetManager: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+04-28 21:18:14.892  3123  3123 W AndroidKeysetManager: 	at java.lang.reflect.Method.invoke(Native Method)
+04-28 21:18:14.892  3123  3123 W AndroidKeysetManager: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+04-28 21:18:14.892  3123  3123 W AndroidKeysetManager: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+04-28 21:18:14.907  3123  3123 W BMP:MotionListener: Unreliable motion sensors data...
+04-28 21:18:14.908  3123  3123 W BMP:OrientationListener: Unreliable orientation sensor data...
+04-28 21:18:14.920  3123  3123 E [Storyly] : EmojiCompat initialization failed:provider not found
+04-28 21:18:14.982  3123  3301 E chromium: [ERROR:gl_surface_egl.cc(320)] eglChooseConfig failed with error EGL_SUCCESS
+04-28 21:18:15.058  3123  3218 D EGL_emulation: eglMakeCurrent: 0x797bb9bf8ce0: ver 2 0 (tinfo 0x797bb00e35c0)
+04-28 21:18:15.061  3123  3301 D EGL_emulation: eglCreateContext: 0x797bb3642520: maj 2 min 0 rcv 2
+04-28 21:18:15.062  3123  3186 W .mobile.androi: Long monitor contention with owner arch_disk_io_1 (3176) at void java.lang.Object.wait(long, int)(Object.java:-2) waiters=0 in void androidx.room.InvalidationTracker.syncTriggers$room_runtime_release(androidx.sqlite.db.SupportSQLiteDatabase) for 321ms
+04-28 21:18:15.062  3123  3301 D EGL_emulation: eglMakeCurrent: 0x797bb3642520: ver 2 0 (tinfo 0x797b94be2940)
+04-28 21:18:15.113  3123  3218 D EGL_emulation: eglMakeCurrent: 0x797bb9bf8ce0: ver 2 0 (tinfo 0x797bb00e35c0)
+04-28 21:18:15.407  3123  3123 W AndroidKeysetManager: keyset not found, will generate a new one
+04-28 21:18:15.407  3123  3123 W AndroidKeysetManager: java.io.FileNotFoundException: can't read keyset; the pref value __androidx_security_crypto_encrypted_prefs_key_keyset__ does not exist
+04-28 21:18:15.407  3123  3123 W AndroidKeysetManager: 	at com.google.crypto.tink.integration.android.SharedPrefKeysetReader.readPref(SharedPrefKeysetReader.java:71)
+04-28 21:18:15.407  3123  3123 W AndroidKeysetManager: 	at com.google.crypto.tink.integration.android.SharedPrefKeysetReader.readEncrypted(SharedPrefKeysetReader.java:89)
+04-28 21:18:15.407  3123  3123 W AndroidKeysetManager: 	at com.google.crypto.tink.KeysetHandle.read(KeysetHandle.java:105)
+04-28 21:18:15.407  3123  3123 W AndroidKeysetManager: 	at com.google.crypto.tink.integration.android.AndroidKeysetManager$Builder.read(AndroidKeysetManager.java:304)
+04-28 21:18:15.407  3123  3123 W AndroidKeysetManager: 	at com.google.crypto.tink.integration.android.AndroidKeysetManager$Builder.readOrGenerateNewKeyset(AndroidKeysetManager.java:280)
+04-28 21:18:15.407  3123  3123 W AndroidKeysetManager: 	at com.google.crypto.tink.integration.android.AndroidKeysetManager$Builder.build(AndroidKeysetManager.java:230)
+04-28 21:18:15.407  3123  3123 W AndroidKeysetManager: 	at androidx.security.crypto.EncryptedSharedPreferences.create(EncryptedSharedPreferences.java:121)
+04-28 21:18:15.407  3123  3123 W AndroidKeysetManager: 	at com.united.mobile.android.appcore.repository.profilepicture.ProfilePictureServiceRepository$Companion.getSharedPreferences(ProfilePictureServiceRepository.kt:52)
+04-28 21:18:15.407  3123  3123 W AndroidKeysetManager: 	at com.united.mobile.android.appcore.repository.profilepicture.ProfilePictureServiceRepository$Companion.getProfilePictureServiceRepository(ProfilePictureServiceRepository.kt:44)
+04-28 21:18:15.407  3123  3123 W AndroidKeysetManager: 	at com.united.mobile.android.appcore.repository.profilepicture.ProfilePictureServiceRepository$Companion.getInstance(ProfilePictureServiceRepository.kt:38)
+04-28 21:18:15.407  3123  3123 W AndroidKeysetManager: 	at com.united.mobile.android.login.ui.main.LoginViewModelFactory.provideViewModel(LoginViewModelFactory.kt:49)
+04-28 21:18:15.407  3123  3123 W AndroidKeysetManager: 	at com.united.mobile.android.login.ui.main.LoginFragment$viewModel$2$invoke$$inlined$obtainViewModel$1.create(BaseFragment.kt:191)
+04-28 21:18:15.407  3123  3123 W AndroidKeysetManager: 	at androidx.lifecycle.ViewModelProvider$Factory.create(ViewModelProvider.kt:83)
+04-28 21:18:15.407  3123  3123 W AndroidKeysetManager: 	at androidx.lifecycle.ViewModelProvider.get(ViewModelProvider.kt:187)
+04-28 21:18:15.407  3123  3123 W AndroidKeysetManager: 	at androidx.lifecycle.ViewModelProvider.get(ViewModelProvider.kt:153)
+04-28 21:18:15.407  3123  3123 W AndroidKeysetManager: 	at com.united.mobile.android.login.ui.main.LoginFragment$viewModel$2.invoke(LoginFragment.kt:516)
+04-28 21:18:15.407  3123  3123 W AndroidKeysetManager: 	at com.united.mobile.android.login.ui.main.LoginFragment$viewModel$2.invoke(LoginFragment.kt:64)
+04-28 21:18:15.407  3123  3123 W AndroidKeysetManager: 	at kotlin.SynchronizedLazyImpl.getValue(LazyJVM.kt:74)
+04-28 21:18:15.407  3123  3123 W AndroidKeysetManager: 	at com.united.mobile.android.login.ui.main.LoginFragment.getViewModel(LoginFragment.kt:64)
+04-28 21:18:15.407  3123  3123 W AndroidKeysetManager: 	at com.united.mobile.android.login.ui.main.LoginFragment.configureViewModel(LoginFragment.kt:232)
+04-28 21:18:15.407  3123  3123 W AndroidKeysetManager: 	at com.united.mobile.android.login.ui.main.LoginFragment.onViewCreated(LoginFragment.kt:86)
+04-28 21:18:15.407  3123  3123 W AndroidKeysetManager: 	at androidx.fragment.app.Fragment.performViewCreated(Fragment.java:3128)
+04-28 21:18:15.407  3123  3123 W AndroidKeysetManager: 	at androidx.fragment.app.FragmentStateManager.createView(FragmentStateManager.java:552)
+04-28 21:18:15.407  3123  3123 W AndroidKeysetManager: 	at androidx.fragment.app.FragmentStateManager.moveToExpectedState(FragmentStateManager.java:261)
+04-28 21:18:15.407  3123  3123 W AndroidKeysetManager: 	at androidx.fragment.app.FragmentManager.executeOpsTogether(FragmentManager.java:1899)
+04-28 21:18:15.407  3123  3123 W AndroidKeysetManager: 	at androidx.fragment.app.FragmentManager.removeRedundantOperationsAndExecute(FragmentManager.java:1823)
+04-28 21:18:15.407  3123  3123 W AndroidKeysetManager: 	at androidx.fragment.app.FragmentManager.execPendingActions(FragmentManager.java:1760)
+04-28 21:18:15.407  3123  3123 W AndroidKeysetManager: 	at androidx.fragment.app.FragmentManager$5.run(FragmentManager.java:547)
+04-28 21:18:15.407  3123  3123 W AndroidKeysetManager: 	at android.os.Handler.handleCallback(Handler.java:873)
+04-28 21:18:15.407  3123  3123 W AndroidKeysetManager: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+04-28 21:18:15.407  3123  3123 W AndroidKeysetManager: 	at android.os.Looper.loop(Looper.java:193)
+04-28 21:18:15.407  3123  3123 W AndroidKeysetManager: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+04-28 21:18:15.407  3123  3123 W AndroidKeysetManager: 	at java.lang.reflect.Method.invoke(Native Method)
+04-28 21:18:15.407  3123  3123 W AndroidKeysetManager: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+04-28 21:18:15.407  3123  3123 W AndroidKeysetManager: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+04-28 21:18:15.423  3123  3123 W AndroidKeysetManager: keyset not found, will generate a new one
+04-28 21:18:15.423  3123  3123 W AndroidKeysetManager: java.io.FileNotFoundException: can't read keyset; the pref value __androidx_security_crypto_encrypted_prefs_value_keyset__ does not exist
+04-28 21:18:15.423  3123  3123 W AndroidKeysetManager: 	at com.google.crypto.tink.integration.android.SharedPrefKeysetReader.readPref(SharedPrefKeysetReader.java:71)
+04-28 21:18:15.423  3123  3123 W AndroidKeysetManager: 	at com.google.crypto.tink.integration.android.SharedPrefKeysetReader.readEncrypted(SharedPrefKeysetReader.java:89)
+04-28 21:18:15.423  3123  3123 W AndroidKeysetManager: 	at com.google.crypto.tink.KeysetHandle.read(KeysetHandle.java:105)
+04-28 21:18:15.423  3123  3123 W AndroidKeysetManager: 	at com.google.crypto.tink.integration.android.AndroidKeysetManager$Builder.read(AndroidKeysetManager.java:304)
+04-28 21:18:15.423  3123  3123 W AndroidKeysetManager: 	at com.google.crypto.tink.integration.android.AndroidKeysetManager$Builder.readOrGenerateNewKeyset(AndroidKeysetManager.java:280)
+04-28 21:18:15.423  3123  3123 W AndroidKeysetManager: 	at com.google.crypto.tink.integration.android.AndroidKeysetManager$Builder.build(AndroidKeysetManager.java:230)
+04-28 21:18:15.423  3123  3123 W AndroidKeysetManager: 	at androidx.security.crypto.EncryptedSharedPreferences.create(EncryptedSharedPreferences.java:126)
+04-28 21:18:15.423  3123  3123 W AndroidKeysetManager: 	at com.united.mobile.android.appcore.repository.profilepicture.ProfilePictureServiceRepository$Companion.getSharedPreferences(ProfilePictureServiceRepository.kt:52)
+04-28 21:18:15.423  3123  3123 W AndroidKeysetManager: 	at com.united.mobile.android.appcore.repository.profilepicture.ProfilePictureServiceRepository$Companion.getProfilePictureServiceRepository(ProfilePictureServiceRepository.kt:44)
+04-28 21:18:15.423  3123  3123 W AndroidKeysetManager: 	at com.united.mobile.android.appcore.repository.profilepicture.ProfilePictureServiceRepository$Companion.getInstance(ProfilePictureServiceRepository.kt:38)
+04-28 21:18:15.423  3123  3123 W AndroidKeysetManager: 	at com.united.mobile.android.login.ui.main.LoginViewModelFactory.provideViewModel(LoginViewModelFactory.kt:49)
+04-28 21:18:15.423  3123  3123 W AndroidKeysetManager: 	at com.united.mobile.android.login.ui.main.LoginFragment$viewModel$2$invoke$$inlined$obtainViewModel$1.create(BaseFragment.kt:191)
+04-28 21:18:15.423  3123  3123 W AndroidKeysetManager: 	at androidx.lifecycle.ViewModelProvider$Factory.create(ViewModelProvider.kt:83)
+04-28 21:18:15.423  3123  3123 W AndroidKeysetManager: 	at androidx.lifecycle.ViewModelProvider.get(ViewModelProvider.kt:187)
+04-28 21:18:15.423  3123  3123 W AndroidKeysetManager: 	at androidx.lifecycle.ViewModelProvider.get(ViewModelProvider.kt:153)
+04-28 21:18:15.423  3123  3123 W AndroidKeysetManager: 	at com.united.mobile.android.login.ui.main.LoginFragment$viewModel$2.invoke(LoginFragment.kt:516)
+04-28 21:18:15.423  3123  3123 W AndroidKeysetManager: 	at com.united.mobile.android.login.ui.main.LoginFragment$viewModel$2.invoke(LoginFragment.kt:64)
+04-28 21:18:15.423  3123  3123 W AndroidKeysetManager: 	at kotlin.SynchronizedLazyImpl.getValue(LazyJVM.kt:74)
+04-28 21:18:15.423  3123  3123 W AndroidKeysetManager: 	at com.united.mobile.android.login.ui.main.LoginFragment.getViewModel(LoginFragment.kt:64)
+04-28 21:18:15.423  3123  3123 W AndroidKeysetManager: 	at com.united.mobile.android.login.ui.main.LoginFragment.configureViewModel(LoginFragment.kt:232)
+04-28 21:18:15.423  3123  3123 W AndroidKeysetManager: 	at com.united.mobile.android.login.ui.main.LoginFragment.onViewCreated(LoginFragment.kt:86)
+04-28 21:18:15.423  3123  3123 W AndroidKeysetManager: 	at androidx.fragment.app.Fragment.performViewCreated(Fragment.java:3128)
+04-28 21:18:15.423  3123  3123 W AndroidKeysetManager: 	at androidx.fragment.app.FragmentStateManager.createView(FragmentStateManager.java:552)
+04-28 21:18:15.423  3123  3123 W AndroidKeysetManager: 	at androidx.fragment.app.FragmentStateManager.moveToExpectedState(FragmentStateManager.java:261)
+04-28 21:18:15.423  3123  3123 W AndroidKeysetManager: 	at androidx.fragment.app.FragmentManager.executeOpsTogether(FragmentManager.java:1899)
+04-28 21:18:15.423  3123  3123 W AndroidKeysetManager: 	at androidx.fragment.app.FragmentManager.removeRedundantOperationsAndExecute(FragmentManager.java:1823)
+04-28 21:18:15.423  3123  3123 W AndroidKeysetManager: 	at androidx.fragment.app.FragmentManager.execPendingActions(FragmentManager.java:1760)
+04-28 21:18:15.423  3123  3123 W AndroidKeysetManager: 	at androidx.fragment.app.FragmentManager$5.run(FragmentManager.java:547)
+04-28 21:18:15.423  3123  3123 W AndroidKeysetManager: 	at android.os.Handler.handleCallback(Handler.java:873)
+04-28 21:18:15.423  3123  3123 W AndroidKeysetManager: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+04-28 21:18:15.423  3123  3123 W AndroidKeysetManager: 	at android.os.Looper.loop(Looper.java:193)
+04-28 21:18:15.423  3123  3123 W AndroidKeysetManager: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+04-28 21:18:15.423  3123  3123 W AndroidKeysetManager: 	at java.lang.reflect.Method.invoke(Native Method)
+04-28 21:18:15.423  3123  3123 W AndroidKeysetManager: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+04-28 21:18:15.423  3123  3123 W AndroidKeysetManager: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+04-28 21:18:15.450  3123  3218 D EGL_emulation: eglMakeCurrent: 0x797bb9bf8ce0: ver 2 0 (tinfo 0x797bb00e35c0)
+04-28 21:18:15.467  3123  3218 D EGL_emulation: eglMakeCurrent: 0x797bb9bf8ce0: ver 2 0 (tinfo 0x797bb00e35c0)
+04-28 21:18:16.273  3123  3123 W BMP:MotionListener: Unreliable motion sensors data...
+04-28 21:18:16.273  3123  3123 W BMP:OrientationListener: Unreliable orientation sensor data...
+04-28 21:18:16.413  3123  3218 D EGL_emulation: eglMakeCurrent: 0x797bb9bf8ce0: ver 2 0 (tinfo 0x797bb00e35c0)
+04-28 21:18:16.793  3123  3218 D EGL_emulation: eglMakeCurrent: 0x797bb9bf8ce0: ver 2 0 (tinfo 0x797bb00e35c0)
+04-28 21:18:16.831  3123  3218 I chatty  : uid=10067(com.united.mobile.android) RenderThread identical 1 line
+04-28 21:18:17.048  3123  3218 D EGL_emulation: eglMakeCurrent: 0x797bb9bf8ce0: ver 2 0 (tinfo 0x797bb00e35c0)
+04-28 21:18:19.042  3123  3123 W BMP:MotionListener: Unreliable motion sensors data...
+04-28 21:18:19.042  3123  3123 W BMP:OrientationListener: Unreliable orientation sensor data...
+04-28 21:18:25.000  3123  3301 D EGL_emulation: eglMakeCurrent: 0x797bb3642520: ver 2 0 (tinfo 0x797b94be2940)
+04-28 21:18:30.434  3123  3130 W .mobile.androi: Receiving file descriptor from ADB failed (socket 31): Success
+04-28 21:18:30.434  3123  3130 E .mobile.androi: Something went wrong getting fds from adb. Retry!: Success
+04-28 21:21:04.448  3123  3123 W QM Native SDK: Capture is currently uninitialized. Please call initialize and start first.
+04-28 21:21:05.136  3123  3218 D EGL_emulation: eglMakeCurrent: 0x797bb9bf8ce0: ver 2 0 (tinfo 0x797bb00e35c0)
+04-28 21:33:12.550  3123  3191 I WM-WorkerWrapper: Worker result FAILURE for Work [ id=a5c36429-9503-44e7-ae5f-1569caee685e, tags={ com.locuslabs.sdk.llprivate.analyticsevents.AnalyticsEventSynchronizer$AnalyticsEventSyncWorker } ]
+04-28 21:33:12.550  3123  3123 W locuslabs: LocusMaps warning stack trace: |java.net.ConnectException: Failed to connect to rest.locuslabs.com/:::443
+04-28 21:33:12.550  3123  3123 W locuslabs: 	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.kt:297)
+04-28 21:33:12.550  3123  3123 W locuslabs: 	at okhttp3.internal.connection.RealConnection.connect(RealConnection.kt:207)
+04-28 21:33:12.550  3123  3123 W locuslabs: 	at okhttp3.internal.connection.ExchangeFinder.findConnection(ExchangeFinder.kt:226)
+04-28 21:33:12.550  3123  3123 W locuslabs: 	at okhttp3.internal.connection.ExchangeFinder.findHealthyConnection(ExchangeFinder.kt:106)
+04-28 21:33:12.550  3123  3123 W locuslabs: 	at okhttp3.internal.connection.ExchangeFinder.find(ExchangeFinder.kt:74)
+04-28 21:33:12.550  3123  3123 W locuslabs: 	at okhttp3.internal.connection.RealCall.initExchange$okhttp(RealCall.kt:255)
+04-28 21:33:12.550  3123  3123 W locuslabs: 	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.kt:32)
+04-28 21:33:12.550  3123  3123 W locuslabs: 	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+04-28 21:33:12.550  3123  3123 W locuslabs: 	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.kt:95)
+04-28 21:33:12.550  3123  3123 W locuslabs: 	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+04-28 21:33:12.550  3123  3123 W locuslabs: 	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.kt:83)
+04-28 21:33:12.550  3123  3123 W locuslabs: 	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+04-28 21:33:12.550  3123  3123 W locuslabs: 	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.kt:76)
+04-28 21:33:12.550  3123  3123 W locuslabs: 	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+04-28 21:33:12.550  3123  3123 W locuslabs: 	at okhttp3.internal.connection.RealCall.getResponseWithInterceptorChain$okhttp(RealCall.kt:201)
+04-28 21:33:12.550  3123  3123 W locuslabs: 	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:517)
+04-28 21:33:12.550  3123  3123 W locuslabs: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+04-28 21:33:12.550  3123  3123 W locuslabs: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+04-28 21:33:12.550  3123  3123 W locuslabs: 	at java.lang.Thread.run(Thread.java:764)
+04-28 21:33:12.550  3123  3123 W locuslabs: 	Suppressed: java.net.ConnectException: Failed to connect to rest.locuslabs.com/0.0.0.0:443
+04-28 21:33:12.550  3123  3123 W locuslabs: 		... 19 more
+04-28 21:33:12.550  3123  3123 W locuslabs: 	Caused by: java.net.ConnectException: failed to connect to localhost/127.0.0.1 (port 443) from /127.0.0.1 (port 38804) after 10000ms: isConnected failed: ECONNREFUSED (Connection refused)
+04-28 21:33:12.550  3123  3123 W locuslabs: 		at libcore.io.IoBridge.isConnected(IoBridge.java:278)
+04-28 21:33:12.550  3123  3123 W locuslabs: 		at libcore.io.IoBridge.connectErrno(IoBridge.java:187)
+04-28 21:33:12.550  3123  3123 W locuslabs: 		at libcore.io.IoBridge.connect(IoBridge.java:129)
+04-28 21:33:12.550  3123  3123 W locuslabs: 		at java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:137)
+04-28 21:33:12.550  3123  3123 W locuslabs: 		at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:390)
+04-28 21:33:12.550  3123  3123 W locuslabs: 		at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:228)
+04-28 21:33:12.550  3123  3123 W locuslabs: 		at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:212)
+04-28 21:33:12.550  3123  3123 W locuslabs: 		at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:436)
+04-28 21:33:12.550  3123  3123 W locuslabs: 		at java.net.Socket.connect(Socket.java:621)
+04-28 21:33:12.550  3123  3123 W locuslabs: 		at okhttp3.internal.platform.AndroidPlatform.connectSocket(AndroidPlatform.kt:63)
+04-28 21:33:12.550  3123  3123 W locuslabs: 		at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.kt:295)
+04-28 21:33:12.550  3123  3123 W locuslabs: 		... 18 more
+04-28 21:33:12.550  3123  3123 W locuslabs: 	Caused by: android.system.ErrnoException: isConnected failed: ECONNREFUSED (Connection refused)
+04-28 21:33:12.550  3123  3123 W locuslabs: 		at libcore.io.IoBridge.isConnected(IoBridge.java:267)
+04-28 21:33:12.550  3123  3123 W locuslabs: 		... 28 more
+04-28 21:33:12.550  3123  3123 W locuslabs: Caused by: java.net.ConnectException: failed to connect to localhost/127.0.0.1 (port 443) from /127.0.0.1 (port 38806) after 10000ms: isConnected failed: ECONNREFUSED (Connection refused)
+04-28 21:33:12.550  3123  3123 W locuslabs: 	at libcore.io.IoBridge.isConnected(IoBridge.java:278)
+04-28 21:33:12.550  3123  3123 W locuslabs: 	at libcore.io.IoBridge.connectErrno(IoBridge.java:187)
+04-28 21:33:12.550  3123  3123 W locuslabs: 	at libcore.io.IoBridge.connect(IoBridge.java:129)
+04-28 21:33:12.550  3123  3123 W locuslabs: 	at java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:137)
+04-28 21:33:12.550  3123  3123 W locuslabs: 	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:390)
+04-28 21:33:12.550  3123  3123 W locuslabs: 	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:228)
+04-28 21:33:12.550  3123  3123 W locuslabs: 	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:212)
+04-28 21:33:12.550  3123  3123 W locuslabs: 	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:436)
+04-28 21:33:12.550  3123  3123 W locuslabs: 	at java.net.Socket.connect(Socket.java:621)
+04-28 21:33:12.550  3123  3123 W locuslabs: 	at okhttp3.internal.platform.AndroidPlatform.connectSocket(AndroidPlatform.kt:63)
+04-28 21:33:12.550  3123  3123 W locuslabs: 	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.kt:295)
+04-28 21:33:12.550  3123  3123 W locuslabs: 	... 18 more
+04-28 21:33:12.550  3123  3123 W locuslabs: Caused by: android.system.ErrnoException: isConnected failed: ECONNREFUSED (Connection refused)
+04-28 21:33:12.550  3123  3123 W locuslabs: 	at libcore.io.IoBridge.isConnected(IoBridge.java:267)
+04-28 21:33:12.550  3123  3123 W locuslabs: 	... 28 more
+04-28 21:33:12.550  3123  3123 W locuslabs: |
+04-28 21:33:12.550  3123  3123 W locuslabs: LocusMaps warning stack trace cause: |java.net.ConnectException: failed to connect to localhost/127.0.0.1 (port 443) from /127.0.0.1 (port 38806) after 10000ms: isConnected failed: ECONNREFUSED (Connection refused)
+04-28 21:33:12.550  3123  3123 W locuslabs: 	at libcore.io.IoBridge.isConnected(IoBridge.java:278)
+04-28 21:33:12.550  3123  3123 W locuslabs: 	at libcore.io.IoBridge.connectErrno(IoBridge.java:187)
+04-28 21:33:12.550  3123  3123 W locuslabs: 	at libcore.io.IoBridge.connect(IoBridge.java:129)
+04-28 21:33:12.550  3123  3123 W locuslabs: 	at java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:137)
+04-28 21:33:12.550  3123  3123 W locuslabs: 	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:390)
+04-28 21:33:12.550  3123  3123 W locuslabs: 	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:228)
+04-28 21:33:12.550  3123  3123 W locuslabs: 	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:212)
+04-28 21:33:12.550  3123  3123 W locuslabs: 	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:436)
+04-28 21:33:12.550  3123  3123 W locuslabs: 	at java.net.Socket.connect(Socket.java:621)
+04-28 21:33:12.550  3123  3123 W locuslabs: 	at okhttp3.internal.platform.AndroidPlatform.connectSocket(AndroidPlatform.kt:63)
+04-28 21:33:12.550  3123  3123 W locuslabs: 	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.kt:295)
+04-28 21:33:12.550  3123  3123 W locuslabs: 	at okhttp3.internal.connection.RealConnection.connect(RealConnection.kt:207)
+04-28 21:33:12.550  3123  3123 W locuslabs: 	at okhttp3.internal.connection.ExchangeFinder.findConnection(ExchangeFinder.kt:226)
+04-28 21:33:12.550  3123  3123 W locuslabs: 	at okhttp3.internal.connection.ExchangeFinder.findHealthyConnection(ExchangeFinder.kt:106)
+04-28 21:33:12.550  3123  3123 W locuslabs: 	at okhttp3.internal.connection.ExchangeFinder.find(ExchangeFinder.kt:74)
+04-28 21:33:12.550  3123  3123 W locuslabs: 	at okhttp3.internal.connection.RealCall.initExchange$okhttp(RealCall.kt:255)
+04-28 21:33:12.550  3123  3123 W locuslabs: 	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.kt:32)
+04-28 21:33:12.550  3123  3123 W locuslabs: 	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+04-28 21:33:12.550  3123  3123 W locuslabs: 	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.kt:95)
+04-28 21:33:12.550  3123  3123 W locuslabs: 	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+04-28 21:33:12.550  3123  3123 W locuslabs: 	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.kt:83)
+04-28 21:33:12.550  3123  3123 W locuslabs: 	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+04-28 21:33:12.550  3123  3123 W locuslabs: 	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.kt:76)
+04-28 21:33:12.550  3123  3123 W locuslabs: 	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+04-28 21:33:12.550  3123  3123 W locuslabs: 	at okhttp3.internal.connection.RealCall.getResponseWithInterceptorChain$okhttp(RealCall.kt:201)
+04-28 21:33:12.550  3123  3123 W locuslabs: 	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:517)
+04-28 21:33:12.550  3123  3123 W locuslabs: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+04-28 21:33:12.550  3123  3123 W locuslabs: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+04-28 21:33:12.550  3123  3123 W locuslabs: 	at java.lang.Thread.run(Thread.java:764)
+04-28 21:33:12.550  3123  3123 W locuslabs: Caused by: android.system.ErrnoException: isConnected failed: ECONNREFUSED (Connection refused)
+04-28 21:33:12.550  3123  3123 W locuslabs: 	at libcore.io.IoBridge.isConnected(IoBridge.java:267)
+04-28 21:33:12.550  3123  3123 W locuslabs: 	... 28 more
+04-28 21:33:12.550  3123  3123 W locuslabs: |
+04-28 21:48:12.674  3123  3123 W locuslabs: LocusMaps warning stack trace: |java.net.ConnectException: Failed to connect to rest.locuslabs.com/:::443
+04-28 21:48:12.674  3123  3123 W locuslabs: 	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.kt:297)
+04-28 21:48:12.674  3123  3123 W locuslabs: 	at okhttp3.internal.connection.RealConnection.connect(RealConnection.kt:207)
+04-28 21:48:12.674  3123  3123 W locuslabs: 	at okhttp3.internal.connection.ExchangeFinder.findConnection(ExchangeFinder.kt:226)
+04-28 21:48:12.674  3123  3123 W locuslabs: 	at okhttp3.internal.connection.ExchangeFinder.findHealthyConnection(ExchangeFinder.kt:106)
+04-28 21:48:12.674  3123  3123 W locuslabs: 	at okhttp3.internal.connection.ExchangeFinder.find(ExchangeFinder.kt:74)
+04-28 21:48:12.674  3123  3123 W locuslabs: 	at okhttp3.internal.connection.RealCall.initExchange$okhttp(RealCall.kt:255)
+04-28 21:48:12.674  3123  3123 W locuslabs: 	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.kt:32)
+04-28 21:48:12.674  3123  3123 W locuslabs: 	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+04-28 21:48:12.674  3123  3123 W locuslabs: 	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.kt:95)
+04-28 21:48:12.674  3123  3123 W locuslabs: 	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+04-28 21:48:12.674  3123  3123 W locuslabs: 	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.kt:83)
+04-28 21:48:12.674  3123  3123 W locuslabs: 	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+04-28 21:48:12.674  3123  3123 W locuslabs: 	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.kt:76)
+04-28 21:48:12.674  3123  3123 W locuslabs: 	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+04-28 21:48:12.674  3123  3123 W locuslabs: 	at okhttp3.internal.connection.RealCall.getResponseWithInterceptorChain$okhttp(RealCall.kt:201)
+04-28 21:48:12.674  3123  3123 W locuslabs: 	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:517)
+04-28 21:48:12.674  3123  3123 W locuslabs: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+04-28 21:48:12.674  3123  3123 W locuslabs: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+04-28 21:48:12.674  3123  3123 W locuslabs: 	at java.lang.Thread.run(Thread.java:764)
+04-28 21:48:12.674  3123  3123 W locuslabs: 	Suppressed: java.net.ConnectException: Failed to connect to rest.locuslabs.com/0.0.0.0:443
+04-28 21:48:12.674  3123  3123 W locuslabs: 		... 19 more
+04-28 21:48:12.674  3123  3123 W locuslabs: 	Caused by: java.net.ConnectException: failed to connect to localhost/127.0.0.1 (port 443) from /127.0.0.1 (port 38824) after 10000ms: isConnected failed: ECONNREFUSED (Connection refused)
+04-28 21:48:12.674  3123  3123 W locuslabs: 		at libcore.io.IoBridge.isConnected(IoBridge.java:278)
+04-28 21:48:12.674  3123  3123 W locuslabs: 		at libcore.io.IoBridge.connectErrno(IoBridge.java:187)
+04-28 21:48:12.674  3123  3123 W locuslabs: 		at libcore.io.IoBridge.connect(IoBridge.java:129)
+04-28 21:48:12.674  3123  3123 W locuslabs: 		at java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:137)
+04-28 21:48:12.674  3123  3123 W locuslabs: 		at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:390)
+04-28 21:48:12.674  3123  3123 W locuslabs: 		at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:228)
+04-28 21:48:12.674  3123  3123 W locuslabs: 		at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:212)
+04-28 21:48:12.674  3123  3123 W locuslabs: 		at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:436)
+04-28 21:48:12.674  3123  3123 W locuslabs: 		at java.net.Socket.connect(Socket.java:621)
+04-28 21:48:12.674  3123  3123 W locuslabs: 		at okhttp3.internal.platform.AndroidPlatform.connectSocket(AndroidPlatform.kt:63)
+04-28 21:48:12.674  3123  3123 W locuslabs: 		at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.kt:295)
+04-28 21:48:12.674  3123  3123 W locuslabs: 		... 18 more
+04-28 21:48:12.674  3123  3123 W locuslabs: 	Caused by: android.system.ErrnoException: isConnected failed: ECONNREFUSED (Connection refused)
+04-28 21:48:12.674  3123  3123 W locuslabs: 		at libcore.io.IoBridge.isConnected(IoBridge.java:267)
+04-28 21:48:12.674  3123  3123 W locuslabs: 		... 28 more
+04-28 21:48:12.674  3123  3123 W locuslabs: Caused by: java.net.ConnectException: failed to connect to localhost/127.0.0.1 (port 443) from /127.0.0.1 (port 38826) after 10000ms: isConnected failed: ECONNREFUSED (Connection refused)
+04-28 21:48:12.674  3123  3123 W locuslabs: 	at libcore.io.IoBridge.isConnected(IoBridge.java:278)
+04-28 21:48:12.674  3123  3123 W locuslabs: 	at libcore.io.IoBridge.connectErrno(IoBridge.java:187)
+04-28 21:48:12.674  3123  3123 W locuslabs: 	at libcore.io.IoBridge.connect(IoBridge.java:129)
+04-28 21:48:12.674  3123  3123 W locuslabs: 	at java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:137)
+04-28 21:48:12.674  3123  3123 W locuslabs: 	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:390)
+04-28 21:48:12.674  3123  3123 W locuslabs: 	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:228)
+04-28 21:48:12.674  3123  3123 W locuslabs: 	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:212)
+04-28 21:48:12.674  3123  3123 W locuslabs: 	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:436)
+04-28 21:48:12.674  3123  3123 W locuslabs: 	at java.net.Socket.connect(Socket.java:621)
+04-28 21:48:12.674  3123  3123 W locuslabs: 	at okhttp3.internal.platform.AndroidPlatform.connectSocket(AndroidPlatform.kt:63)
+04-28 21:48:12.674  3123  3123 W locuslabs: 	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.kt:295)
+04-28 21:48:12.674  3123  3123 W locuslabs: 	... 18 more
+04-28 21:48:12.674  3123  3123 W locuslabs: Caused by: android.system.ErrnoException: isConnected failed: ECONNREFUSED (Connection refused)
+04-28 21:48:12.674  3123  3123 W locuslabs: 	at libcore.io.IoBridge.isConnected(IoBridge.java:267)
+04-28 21:48:12.674  3123  3123 W locuslabs: 	... 28 more
+04-28 21:48:12.674  3123  3123 W locuslabs: |
+04-28 21:48:12.675  3123  3149 I WM-WorkerWrapper: Worker result FAILURE for Work [ id=a5c36429-9503-44e7-ae5f-1569caee685e, tags={ com.locuslabs.sdk.llprivate.analyticsevents.AnalyticsEventSynchronizer$AnalyticsEventSyncWorker } ]
+04-28 21:48:12.675  3123  3123 W locuslabs: LocusMaps warning stack trace cause: |java.net.ConnectException: failed to connect to localhost/127.0.0.1 (port 443) from /127.0.0.1 (port 38826) after 10000ms: isConnected failed: ECONNREFUSED (Connection refused)
+04-28 21:48:12.675  3123  3123 W locuslabs: 	at libcore.io.IoBridge.isConnected(IoBridge.java:278)
+04-28 21:48:12.675  3123  3123 W locuslabs: 	at libcore.io.IoBridge.connectErrno(IoBridge.java:187)
+04-28 21:48:12.675  3123  3123 W locuslabs: 	at libcore.io.IoBridge.connect(IoBridge.java:129)
+04-28 21:48:12.675  3123  3123 W locuslabs: 	at java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:137)
+04-28 21:48:12.675  3123  3123 W locuslabs: 	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:390)
+04-28 21:48:12.675  3123  3123 W locuslabs: 	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:228)
+04-28 21:48:12.675  3123  3123 W locuslabs: 	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:212)
+04-28 21:48:12.675  3123  3123 W locuslabs: 	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:436)
+04-28 21:48:12.675  3123  3123 W locuslabs: 	at java.net.Socket.connect(Socket.java:621)
+04-28 21:48:12.675  3123  3123 W locuslabs: 	at okhttp3.internal.platform.AndroidPlatform.connectSocket(AndroidPlatform.kt:63)
+04-28 21:48:12.675  3123  3123 W locuslabs: 	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.kt:295)
+04-28 21:48:12.675  3123  3123 W locuslabs: 	at okhttp3.internal.connection.RealConnection.connect(RealConnection.kt:207)
+04-28 21:48:12.675  3123  3123 W locuslabs: 	at okhttp3.internal.connection.ExchangeFinder.findConnection(ExchangeFinder.kt:226)
+04-28 21:48:12.675  3123  3123 W locuslabs: 	at okhttp3.internal.connection.ExchangeFinder.findHealthyConnection(ExchangeFinder.kt:106)
+04-28 21:48:12.675  3123  3123 W locuslabs: 	at okhttp3.internal.connection.ExchangeFinder.find(ExchangeFinder.kt:74)
+04-28 21:48:12.675  3123  3123 W locuslabs: 	at okhttp3.internal.connection.RealCall.initExchange$okhttp(RealCall.kt:255)
+04-28 21:48:12.675  3123  3123 W locuslabs: 	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.kt:32)
+04-28 21:48:12.675  3123  3123 W locuslabs: 	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+04-28 21:48:12.675  3123  3123 W locuslabs: 	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.kt:95)
+04-28 21:48:12.675  3123  3123 W locuslabs: 	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+04-28 21:48:12.675  3123  3123 W locuslabs: 	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.kt:83)
+04-28 21:48:12.675  3123  3123 W locuslabs: 	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+04-28 21:48:12.675  3123  3123 W locuslabs: 	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.kt:76)
+04-28 21:48:12.675  3123  3123 W locuslabs: 	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+04-28 21:48:12.675  3123  3123 W locuslabs: 	at okhttp3.internal.connection.RealCall.getResponseWithInterceptorChain$okhttp(RealCall.kt:201)
+04-28 21:48:12.675  3123  3123 W locuslabs: 	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:517)
+04-28 21:48:12.675  3123  3123 W locuslabs: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+04-28 21:48:12.675  3123  3123 W locuslabs: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+04-28 21:48:12.675  3123  3123 W locuslabs: 	at java.lang.Thread.run(Thread.java:764)
+04-28 21:48:12.675  3123  3123 W locuslabs: Caused by: android.system.ErrnoException: isConnected failed: ECONNREFUSED (Connection refused)
+04-28 21:48:12.675  3123  3123 W locuslabs: 	at libcore.io.IoBridge.isConnected(IoBridge.java:267)
+04-28 21:48:12.675  3123  3123 W locuslabs: 	... 28 more
+04-28 21:48:12.675  3123  3123 W locuslabs: |
+04-28 22:03:12.796  3123  3123 W locuslabs: LocusMaps warning stack trace: |java.net.ConnectException: Failed to connect to rest.locuslabs.com/:::443
+04-28 22:03:12.796  3123  3123 W locuslabs: 	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.kt:297)
+04-28 22:03:12.796  3123  3123 W locuslabs: 	at okhttp3.internal.connection.RealConnection.connect(RealConnection.kt:207)
+04-28 22:03:12.796  3123  3123 W locuslabs: 	at okhttp3.internal.connection.ExchangeFinder.findConnection(ExchangeFinder.kt:226)
+04-28 22:03:12.796  3123  3123 W locuslabs: 	at okhttp3.internal.connection.ExchangeFinder.findHealthyConnection(ExchangeFinder.kt:106)
+04-28 22:03:12.796  3123  3123 W locuslabs: 	at okhttp3.internal.connection.ExchangeFinder.find(ExchangeFinder.kt:74)
+04-28 22:03:12.796  3123  3123 W locuslabs: 	at okhttp3.internal.connection.RealCall.initExchange$okhttp(RealCall.kt:255)
+04-28 22:03:12.796  3123  3123 W locuslabs: 	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.kt:32)
+04-28 22:03:12.796  3123  3123 W locuslabs: 	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+04-28 22:03:12.796  3123  3123 W locuslabs: 	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.kt:95)
+04-28 22:03:12.796  3123  3123 W locuslabs: 	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+04-28 22:03:12.796  3123  3123 W locuslabs: 	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.kt:83)
+04-28 22:03:12.796  3123  3123 W locuslabs: 	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+04-28 22:03:12.796  3123  3123 W locuslabs: 	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.kt:76)
+04-28 22:03:12.796  3123  3123 W locuslabs: 	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+04-28 22:03:12.796  3123  3123 W locuslabs: 	at okhttp3.internal.connection.RealCall.getResponseWithInterceptorChain$okhttp(RealCall.kt:201)
+04-28 22:03:12.796  3123  3123 W locuslabs: 	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:517)
+04-28 22:03:12.796  3123  3123 W locuslabs: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+04-28 22:03:12.796  3123  3123 W locuslabs: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+04-28 22:03:12.796  3123  3123 W locuslabs: 	at java.lang.Thread.run(Thread.java:764)
+04-28 22:03:12.796  3123  3123 W locuslabs: 	Suppressed: java.net.ConnectException: Failed to connect to rest.locuslabs.com/0.0.0.0:443
+04-28 22:03:12.796  3123  3123 W locuslabs: 		... 19 more
+04-28 22:03:12.796  3123  3123 W locuslabs: 	Caused by: java.net.ConnectException: failed to connect to localhost/127.0.0.1 (port 443) from /127.0.0.1 (port 38844) after 10000ms: isConnected failed: ECONNREFUSED (Connection refused)
+04-28 22:03:12.796  3123  3123 W locuslabs: 		at libcore.io.IoBridge.isConnected(IoBridge.java:278)
+04-28 22:03:12.796  3123  3123 W locuslabs: 		at libcore.io.IoBridge.connectErrno(IoBridge.java:187)
+04-28 22:03:12.796  3123  3123 W locuslabs: 		at libcore.io.IoBridge.connect(IoBridge.java:129)
+04-28 22:03:12.796  3123  3123 W locuslabs: 		at java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:137)
+04-28 22:03:12.796  3123  3123 W locuslabs: 		at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:390)
+04-28 22:03:12.796  3123  3123 W locuslabs: 		at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:228)
+04-28 22:03:12.796  3123  3123 W locuslabs: 		at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:212)
+04-28 22:03:12.796  3123  3123 W locuslabs: 		at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:436)
+04-28 22:03:12.796  3123  3123 W locuslabs: 		at java.net.Socket.connect(Socket.java:621)
+04-28 22:03:12.796  3123  3123 W locuslabs: 		at okhttp3.internal.platform.AndroidPlatform.connectSocket(AndroidPlatform.kt:63)
+04-28 22:03:12.796  3123  3123 W locuslabs: 		at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.kt:295)
+04-28 22:03:12.796  3123  3123 W locuslabs: 		... 18 more
+04-28 22:03:12.796  3123  3123 W locuslabs: 	Caused by: android.system.ErrnoException: isConnected failed: ECONNREFUSED (Connection refused)
+04-28 22:03:12.796  3123  3123 W locuslabs: 		at libcore.io.IoBridge.isConnected(IoBridge.java:267)
+04-28 22:03:12.796  3123  3123 W locuslabs: 		... 28 more
+04-28 22:03:12.796  3123  3123 W locuslabs: Caused by: java.net.ConnectException: failed to connect to localhost/127.0.0.1 (port 443) from /127.0.0.1 (port 38846) after 10000ms: isConnected failed: ECONNREFUSED (Connection refused)
+04-28 22:03:12.796  3123  3123 W locuslabs: 	at libcore.io.IoBridge.isConnected(IoBridge.java:278)
+04-28 22:03:12.796  3123  3123 W locuslabs: 	at libcore.io.IoBridge.connectErrno(IoBridge.java:187)
+04-28 22:03:12.796  3123  3123 W locuslabs: 	at libcore.io.IoBridge.connect(IoBridge.java:129)
+04-28 22:03:12.796  3123  3123 W locuslabs: 	at java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:137)
+04-28 22:03:12.796  3123  3123 W locuslabs: 	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:390)
+04-28 22:03:12.796  3123  3123 W locuslabs: 	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:228)
+04-28 22:03:12.796  3123  3123 W locuslabs: 	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:212)
+04-28 22:03:12.796  3123  3123 W locuslabs: 	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:436)
+04-28 22:03:12.796  3123  3123 W locuslabs: 	at java.net.Socket.connect(Socket.java:621)
+04-28 22:03:12.796  3123  3123 W locuslabs: 	at okhttp3.internal.platform.AndroidPlatform.connectSocket(AndroidPlatform.kt:63)
+04-28 22:03:12.796  3123  3123 W locuslabs: 	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.kt:295)
+04-28 22:03:12.796  3123  3123 W locuslabs: 	... 18 more
+04-28 22:03:12.796  3123  3123 W locuslabs: Caused by: android.system.ErrnoException: isConnected failed: ECONNREFUSED (Connection refused)
+04-28 22:03:12.796  3123  3123 W locuslabs: 	at libcore.io.IoBridge.isConnected(IoBridge.java:267)
+04-28 22:03:12.796  3123  3123 W locuslabs: 	... 28 more
+04-28 22:03:12.796  3123  3123 W locuslabs: |
+04-28 22:03:12.797  3123  3158 I WM-WorkerWrapper: Worker result FAILURE for Work [ id=a5c36429-9503-44e7-ae5f-1569caee685e, tags={ com.locuslabs.sdk.llprivate.analyticsevents.AnalyticsEventSynchronizer$AnalyticsEventSyncWorker } ]
+04-28 22:03:12.797  3123  3123 W locuslabs: LocusMaps warning stack trace cause: |java.net.ConnectException: failed to connect to localhost/127.0.0.1 (port 443) from /127.0.0.1 (port 38846) after 10000ms: isConnected failed: ECONNREFUSED (Connection refused)
+04-28 22:03:12.797  3123  3123 W locuslabs: 	at libcore.io.IoBridge.isConnected(IoBridge.java:278)
+04-28 22:03:12.797  3123  3123 W locuslabs: 	at libcore.io.IoBridge.connectErrno(IoBridge.java:187)
+04-28 22:03:12.797  3123  3123 W locuslabs: 	at libcore.io.IoBridge.connect(IoBridge.java:129)
+04-28 22:03:12.797  3123  3123 W locuslabs: 	at java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:137)
+04-28 22:03:12.797  3123  3123 W locuslabs: 	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:390)
+04-28 22:03:12.797  3123  3123 W locuslabs: 	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:228)
+04-28 22:03:12.797  3123  3123 W locuslabs: 	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:212)
+04-28 22:03:12.797  3123  3123 W locuslabs: 	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:436)
+04-28 22:03:12.797  3123  3123 W locuslabs: 	at java.net.Socket.connect(Socket.java:621)
+04-28 22:03:12.797  3123  3123 W locuslabs: 	at okhttp3.internal.platform.AndroidPlatform.connectSocket(AndroidPlatform.kt:63)
+04-28 22:03:12.797  3123  3123 W locuslabs: 	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.kt:295)
+04-28 22:03:12.797  3123  3123 W locuslabs: 	at okhttp3.internal.connection.RealConnection.connect(RealConnection.kt:207)
+04-28 22:03:12.797  3123  3123 W locuslabs: 	at okhttp3.internal.connection.ExchangeFinder.findConnection(ExchangeFinder.kt:226)
+04-28 22:03:12.797  3123  3123 W locuslabs: 	at okhttp3.internal.connection.ExchangeFinder.findHealthyConnection(ExchangeFinder.kt:106)
+04-28 22:03:12.797  3123  3123 W locuslabs: 	at okhttp3.internal.connection.ExchangeFinder.find(ExchangeFinder.kt:74)
+04-28 22:03:12.797  3123  3123 W locuslabs: 	at okhttp3.internal.connection.RealCall.initExchange$okhttp(RealCall.kt:255)
+04-28 22:03:12.797  3123  3123 W locuslabs: 	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.kt:32)
+04-28 22:03:12.797  3123  3123 W locuslabs: 	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+04-28 22:03:12.797  3123  3123 W locuslabs: 	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.kt:95)
+04-28 22:03:12.797  3123  3123 W locuslabs: 	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+04-28 22:03:12.797  3123  3123 W locuslabs: 	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.kt:83)
+04-28 22:03:12.797  3123  3123 W locuslabs: 	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+04-28 22:03:12.797  3123  3123 W locuslabs: 	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.kt:76)
+04-28 22:03:12.797  3123  3123 W locuslabs: 	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+04-28 22:03:12.797  3123  3123 W locuslabs: 	at okhttp3.internal.connection.RealCall.getResponseWithInterceptorChain$okhttp(RealCall.kt:201)
+04-28 22:03:12.797  3123  3123 W locuslabs: 	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:517)
+04-28 22:03:12.797  3123  3123 W locuslabs: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+04-28 22:03:12.797  3123  3123 W locuslabs: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+04-28 22:03:12.797  3123  3123 W locuslabs: 	at java.lang.Thread.run(Thread.java:764)
+04-28 22:03:12.797  3123  3123 W locuslabs: Caused by: android.system.ErrnoException: isConnected failed: ECONNREFUSED (Connection refused)
+04-28 22:03:12.797  3123  3123 W locuslabs: 	at libcore.io.IoBridge.isConnected(IoBridge.java:267)
+04-28 22:03:12.797  3123  3123 W locuslabs: 	... 28 more
+04-28 22:03:12.797  3123  3123 W locuslabs: |
+04-28 22:17:23.945  3123  3123 W QM Native SDK: Capture is currently uninitialized. Please call initialize and start first.
+04-28 22:17:23.954  3123  3123 W BMP:MotionListener: Unreliable motion sensors data...
+04-28 22:17:23.956  3123  3123 W BMP:OrientationListener: Unreliable orientation sensor data...
+04-28 22:17:23.993  3123  3218 D EGL_emulation: eglMakeCurrent: 0x797bb9bf8ce0: ver 2 0 (tinfo 0x797bb00e35c0)
+04-28 22:17:24.581  3123  3123 W BMP:MotionListener: Unreliable motion sensors data...
+04-28 22:17:24.582  3123  3123 W BMP:OrientationListener: Unreliable orientation sensor data...
+04-28 22:18:12.814  3123  3123 W locuslabs: LocusMaps warning stack trace: |java.net.ConnectException: Failed to connect to rest.locuslabs.com/:::443
+04-28 22:18:12.814  3123  3123 W locuslabs: 	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.kt:297)
+04-28 22:18:12.814  3123  3123 W locuslabs: 	at okhttp3.internal.connection.RealConnection.connect(RealConnection.kt:207)
+04-28 22:18:12.814  3123  3123 W locuslabs: 	at okhttp3.internal.connection.ExchangeFinder.findConnection(ExchangeFinder.kt:226)
+04-28 22:18:12.814  3123  3123 W locuslabs: 	at okhttp3.internal.connection.ExchangeFinder.findHealthyConnection(ExchangeFinder.kt:106)
+04-28 22:18:12.814  3123  3123 W locuslabs: 	at okhttp3.internal.connection.ExchangeFinder.find(ExchangeFinder.kt:74)
+04-28 22:18:12.814  3123  3123 W locuslabs: 	at okhttp3.internal.connection.RealCall.initExchange$okhttp(RealCall.kt:255)
+04-28 22:18:12.814  3123  3123 W locuslabs: 	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.kt:32)
+04-28 22:18:12.814  3123  3123 W locuslabs: 	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+04-28 22:18:12.814  3123  3123 W locuslabs: 	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.kt:95)
+04-28 22:18:12.814  3123  3123 W locuslabs: 	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+04-28 22:18:12.814  3123  3123 W locuslabs: 	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.kt:83)
+04-28 22:18:12.814  3123  3123 W locuslabs: 	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+04-28 22:18:12.814  3123  3123 W locuslabs: 	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.kt:76)
+04-28 22:18:12.814  3123  3123 W locuslabs: 	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+04-28 22:18:12.814  3123  3123 W locuslabs: 	at okhttp3.internal.connection.RealCall.getResponseWithInterceptorChain$okhttp(RealCall.kt:201)
+04-28 22:18:12.814  3123  3123 W locuslabs: 	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:517)
+04-28 22:18:12.814  3123  3123 W locuslabs: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+04-28 22:18:12.814  3123  3123 W locuslabs: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+04-28 22:18:12.814  3123  3123 W locuslabs: 	at java.lang.Thread.run(Thread.java:764)
+04-28 22:18:12.814  3123  3123 W locuslabs: 	Suppressed: java.net.ConnectException: Failed to connect to rest.locuslabs.com/0.0.0.0:443
+04-28 22:18:12.814  3123  3123 W locuslabs: 		... 19 more
+04-28 22:18:12.814  3123  3123 W locuslabs: 	Caused by: java.net.ConnectException: failed to connect to localhost/127.0.0.1 (port 443) from /127.0.0.1 (port 38868) after 10000ms: isConnected failed: ECONNREFUSED (Connection refused)
+04-28 22:18:12.814  3123  3123 W locuslabs: 		at libcore.io.IoBridge.isConnected(IoBridge.java:278)
+04-28 22:18:12.814  3123  3123 W locuslabs: 		at libcore.io.IoBridge.connectErrno(IoBridge.java:187)
+04-28 22:18:12.814  3123  3123 W locuslabs: 		at libcore.io.IoBridge.connect(IoBridge.java:129)
+04-28 22:18:12.814  3123  3123 W locuslabs: 		at java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:137)
+04-28 22:18:12.814  3123  3123 W locuslabs: 		at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:390)
+04-28 22:18:12.814  3123  3123 W locuslabs: 		at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:228)
+04-28 22:18:12.814  3123  3123 W locuslabs: 		at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:212)
+04-28 22:18:12.814  3123  3123 W locuslabs: 		at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:436)
+04-28 22:18:12.814  3123  3123 W locuslabs: 		at java.net.Socket.connect(Socket.java:621)
+04-28 22:18:12.814  3123  3123 W locuslabs: 		at okhttp3.internal.platform.AndroidPlatform.connectSocket(AndroidPlatform.kt:63)
+04-28 22:18:12.814  3123  3123 W locuslabs: 		at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.kt:295)
+04-28 22:18:12.814  3123  3123 W locuslabs: 		... 18 more
+04-28 22:18:12.814  3123  3123 W locuslabs: 	Caused by: android.system.ErrnoException: isConnected failed: ECONNREFUSED (Connection refused)
+04-28 22:18:12.814  3123  3123 W locuslabs: 		at libcore.io.IoBridge.isConnected(IoBridge.java:267)
+04-28 22:18:12.814  3123  3123 W locuslabs: 		... 28 more
+04-28 22:18:12.814  3123  3123 W locuslabs: Caused by: java.net.ConnectException: failed to connect to localhost/127.0.0.1 (port 443) from /127.0.0.1 (port 38870) after 10000ms: isConnected failed: ECONNREFUSED (Connection refused)
+04-28 22:18:12.814  3123  3123 W locuslabs: 	at libcore.io.IoBridge.isConnected(IoBridge.java:278)
+04-28 22:18:12.814  3123  3123 W locuslabs: 	at libcore.io.IoBridge.connectErrno(IoBridge.java:187)
+04-28 22:18:12.814  3123  3123 W locuslabs: 	at libcore.io.IoBridge.connect(IoBridge.java:129)
+04-28 22:18:12.814  3123  3123 W locuslabs: 	at java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:137)
+04-28 22:18:12.814  3123  3123 W locuslabs: 	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:390)
+04-28 22:18:12.814  3123  3123 W locuslabs: 	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:228)
+04-28 22:18:12.814  3123  3123 W locuslabs: 	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:212)
+04-28 22:18:12.814  3123  3123 W locuslabs: 	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:436)
+04-28 22:18:12.814  3123  3123 W locuslabs: 	at java.net.Socket.connect(Socket.java:621)
+04-28 22:18:12.814  3123  3123 W locuslabs: 	at okhttp3.internal.platform.AndroidPlatform.connectSocket(AndroidPlatform.kt:63)
+04-28 22:18:12.814  3123  3123 W locuslabs: 	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.kt:295)
+04-28 22:18:12.814  3123  3123 W locuslabs: 	... 18 more
+04-28 22:18:12.814  3123  3123 W locuslabs: Caused by: android.system.ErrnoException: isConnected failed: ECONNREFUSED (Connection refused)
+04-28 22:18:12.814  3123  3123 W locuslabs: 	at libcore.io.IoBridge.isConnected(IoBridge.java:267)
+04-28 22:18:12.814  3123  3123 W locuslabs: 	... 28 more
+04-28 22:18:12.814  3123  3123 W locuslabs: |
+04-28 22:18:12.815  3123  3123 W locuslabs: LocusMaps warning stack trace cause: |java.net.ConnectException: failed to connect to localhost/127.0.0.1 (port 443) from /127.0.0.1 (port 38870) after 10000ms: isConnected failed: ECONNREFUSED (Connection refused)
+04-28 22:18:12.815  3123  3123 W locuslabs: 	at libcore.io.IoBridge.isConnected(IoBridge.java:278)
+04-28 22:18:12.815  3123  3123 W locuslabs: 	at libcore.io.IoBridge.connectErrno(IoBridge.java:187)
+04-28 22:18:12.815  3123  3123 W locuslabs: 	at libcore.io.IoBridge.connect(IoBridge.java:129)
+04-28 22:18:12.815  3123  3123 W locuslabs: 	at java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:137)
+04-28 22:18:12.815  3123  3123 W locuslabs: 	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:390)
+04-28 22:18:12.815  3123  3123 W locuslabs: 	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:228)
+04-28 22:18:12.815  3123  3123 W locuslabs: 	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:212)
+04-28 22:18:12.815  3123  3123 W locuslabs: 	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:436)
+04-28 22:18:12.815  3123  3123 W locuslabs: 	at java.net.Socket.connect(Socket.java:621)
+04-28 22:18:12.815  3123  3123 W locuslabs: 	at okhttp3.internal.platform.AndroidPlatform.connectSocket(AndroidPlatform.kt:63)
+04-28 22:18:12.815  3123  3123 W locuslabs: 	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.kt:295)
+04-28 22:18:12.815  3123  3123 W locuslabs: 	at okhttp3.internal.connection.RealConnection.connect(RealConnection.kt:207)
+04-28 22:18:12.815  3123  3123 W locuslabs: 	at okhttp3.internal.connection.ExchangeFinder.findConnection(ExchangeFinder.kt:226)
+04-28 22:18:12.815  3123  3123 W locuslabs: 	at okhttp3.internal.connection.ExchangeFinder.findHealthyConnection(ExchangeFinder.kt:106)
+04-28 22:18:12.815  3123  3123 W locuslabs: 	at okhttp3.internal.connection.ExchangeFinder.find(ExchangeFinder.kt:74)
+04-28 22:18:12.815  3123  3123 W locuslabs: 	at okhttp3.internal.connection.RealCall.initExchange$okhttp(RealCall.kt:255)
+04-28 22:18:12.815  3123  3123 W locuslabs: 	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.kt:32)
+04-28 22:18:12.815  3123  3123 W locuslabs: 	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+04-28 22:18:12.815  3123  3123 W locuslabs: 	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.kt:95)
+04-28 22:18:12.815  3123  3123 W locuslabs: 	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+04-28 22:18:12.815  3123  3123 W locuslabs: 	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.kt:83)
+04-28 22:18:12.815  3123  3123 W locuslabs: 	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+04-28 22:18:12.815  3123  3123 W locuslabs: 	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.kt:76)
+04-28 22:18:12.815  3123  3123 W locuslabs: 	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+04-28 22:18:12.815  3123  3123 W locuslabs: 	at okhttp3.internal.connection.RealCall.getResponseWithInterceptorChain$okhttp(RealCall.kt:201)
+04-28 22:18:12.815  3123  3123 W locuslabs: 	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:517)
+04-28 22:18:12.815  3123  3123 W locuslabs: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+04-28 22:18:12.815  3123  3123 W locuslabs: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+04-28 22:18:12.815  3123  3123 W locuslabs: 	at java.lang.Thread.run(Thread.java:764)
+04-28 22:18:12.815  3123  3123 W locuslabs: Caused by: android.system.ErrnoException: isConnected failed: ECONNREFUSED (Connection refused)
+04-28 22:18:12.815  3123  3123 W locuslabs: 	at libcore.io.IoBridge.isConnected(IoBridge.java:267)
+04-28 22:18:12.815  3123  3123 W locuslabs: 	... 28 more
+04-28 22:18:12.815  3123  3123 W locuslabs: |
+04-28 22:18:12.815  3123  3191 I WM-WorkerWrapper: Worker result FAILURE for Work [ id=a5c36429-9503-44e7-ae5f-1569caee685e, tags={ com.locuslabs.sdk.llprivate.analyticsevents.AnalyticsEventSynchronizer$AnalyticsEventSyncWorker } ]
+04-28 22:19:28.529  3123  3123 W IInputConnectionWrapper: getSelectedText on inactive InputConnection
+04-28 22:19:28.529  3123  3123 W IInputConnectionWrapper: requestCursorAnchorInfo on inactive InputConnection
+04-28 22:19:28.530  3123  3123 W IInputConnectionWrapper: getTextBeforeCursor on inactive InputConnection
+04-28 22:19:28.530  3123  3123 W IInputConnectionWrapper: getTextBeforeCursor on inactive InputConnection
+04-28 22:19:28.531  3123  3123 W IInputConnectionWrapper: getTextBeforeCursor on inactive InputConnection
+04-28 22:19:39.070  3123  3123 W BMP:MotionListener: Unreliable motion sensors data...
+04-28 22:19:39.070  3123  3123 W BMP:OrientationListener: Unreliable orientation sensor data...
+04-28 22:19:39.253  3123  3218 D EGL_emulation: eglMakeCurrent: 0x797bb9bf8ce0: ver 2 0 (tinfo 0x797bb00e35c0)
+04-28 22:19:39.405  3123  3218 I chatty  : uid=10067(com.united.mobile.android) RenderThread identical 3 lines
+04-28 22:19:39.502  3123  3218 D EGL_emulation: eglMakeCurrent: 0x797bb9bf8ce0: ver 2 0 (tinfo 0x797bb00e35c0)
+04-28 22:19:41.138  3123  3218 D EGL_emulation: eglMakeCurrent: 0x797bb9bf8ce0: ver 2 0 (tinfo 0x797bb00e35c0)
+04-28 22:19:41.155  3123  3218 D EGL_emulation: eglMakeCurrent: 0x797bb9bf8ce0: ver 2 0 (tinfo 0x797bb00e35c0)
+04-28 22:19:43.441  3123  3218 D EGL_emulation: eglMakeCurrent: 0x797bb9bf8ce0: ver 2 0 (tinfo 0x797bb00e35c0)
+04-28 22:19:43.461  3123  3218 D EGL_emulation: eglMakeCurrent: 0x797bb9bf8ce0: ver 2 0 (tinfo 0x797bb00e35c0)
+04-28 22:19:43.520  3123  3218 I chatty  : uid=10067(com.united.mobile.android) RenderThread identical 1 line
+04-28 22:19:43.534  3123  3218 D EGL_emulation: eglMakeCurrent: 0x797bb9bf8ce0: ver 2 0 (tinfo 0x797bb00e35c0)
+04-28 22:19:45.037  3123  3218 D EGL_emulation: eglMakeCurrent: 0x797bb9bf8ce0: ver 2 0 (tinfo 0x797bb00e35c0)
+04-28 22:20:23.187  3123  3218 D EGL_emulation: eglMakeCurrent: 0x797bb9bf8ce0: ver 2 0 (tinfo 0x797bb00e35c0)
+04-28 22:20:23.192  3123  3218 D OpenGLRenderer: endAllActiveAnimators on 0x797b9bf5bc00 (DropDownListView) with handle 0x797b9bf62a20
+04-28 22:20:23.199  3123  3218 D EGL_emulation: eglMakeCurrent: 0x797bb9bf8ce0: ver 2 0 (tinfo 0x797bb00e35c0)
+04-28 22:20:24.383  3123  3218 D EGL_emulation: eglMakeCurrent: 0x797bb9bf8ce0: ver 2 0 (tinfo 0x797bb00e35c0)
+04-28 22:20:24.467  3123  3218 I chatty  : uid=10067(com.united.mobile.android) RenderThread identical 2 lines
+04-28 22:20:24.475  3123  3218 D EGL_emulation: eglMakeCurrent: 0x797bb9bf8ce0: ver 2 0 (tinfo 0x797bb00e35c0)
+04-28 22:20:25.986  3123  3218 D EGL_emulation: eglMakeCurrent: 0x797bb9bf8ce0: ver 2 0 (tinfo 0x797bb00e35c0)
+04-28 22:20:31.570  3123  3218 D EGL_emulation: eglMakeCurrent: 0x797bb9bf8ce0: ver 2 0 (tinfo 0x797bb00e35c0)
+04-28 22:20:31.574  3123  3218 D OpenGLRenderer: endAllActiveAnimators on 0x797bb00b0100 (DropDownListView) with handle 0x797b9bf62e40
+04-28 22:20:31.580  3123  3218 D EGL_emulation: eglMakeCurrent: 0x797bb9bf8ce0: ver 2 0 (tinfo 0x797bb00e35c0)
+04-28 22:20:32.274  3123  3123 W BMP:MotionListener: Unreliable motion sensors data...
+04-28 22:20:32.274  3123  3123 W BMP:OrientationListener: Unreliable orientation sensor data...
+04-28 22:20:32.338  3123  3218 D EGL_emulation: eglMakeCurrent: 0x797bb9bf8ce0: ver 2 0 (tinfo 0x797bb00e35c0)
+04-28 22:20:32.667  3123  3218 I chatty  : uid=10067(com.united.mobile.android) RenderThread identical 11 lines
+04-28 22:20:32.698  3123  3218 D EGL_emulation: eglMakeCurrent: 0x797bb9bf8ce0: ver 2 0 (tinfo 0x797bb00e35c0)
+04-28 22:20:33.685  3123  3123 W BMP:MotionListener: Unreliable motion sensors data...
+04-28 22:20:33.686  3123  3123 W BMP:OrientationListener: Unreliable orientation sensor data...
+04-28 22:20:33.693  3123  3123 W BMP:MotionListener: Unreliable motion sensors data...
+04-28 22:20:33.694  3123  3123 W BMP:OrientationListener: Unreliable orientation sensor data...
+04-28 22:20:33.702  3123  3123 W BMP:MotionListener: Unreliable motion sensors data...
+04-28 22:20:33.703  3123  3123 W BMP:OrientationListener: Unreliable orientation sensor data...
+04-28 22:20:34.045  3123  3218 D EGL_emulation: eglMakeCurrent: 0x797bb9bf8ce0: ver 2 0 (tinfo 0x797bb00e35c0)
+04-28 22:20:34.065  3123  3218 D EGL_emulation: eglMakeCurrent: 0x797bb9bf8ce0: ver 2 0 (tinfo 0x797bb00e35c0)
+04-28 22:20:34.070  3123  4557 W AndroidKeysetManager: keyset not found, will generate a new one
+04-28 22:20:34.070  3123  4557 W AndroidKeysetManager: java.io.FileNotFoundException: can't read keyset; the pref value __androidx_security_crypto_encrypted_prefs_key_keyset__ does not exist
+04-28 22:20:34.070  3123  4557 W AndroidKeysetManager: 	at com.google.crypto.tink.integration.android.SharedPrefKeysetReader.readPref(SharedPrefKeysetReader.java:71)
+04-28 22:20:34.070  3123  4557 W AndroidKeysetManager: 	at com.google.crypto.tink.integration.android.SharedPrefKeysetReader.readEncrypted(SharedPrefKeysetReader.java:89)
+04-28 22:20:34.070  3123  4557 W AndroidKeysetManager: 	at com.google.crypto.tink.KeysetHandle.read(KeysetHandle.java:105)
+04-28 22:20:34.070  3123  4557 W AndroidKeysetManager: 	at com.google.crypto.tink.integration.android.AndroidKeysetManager$Builder.read(AndroidKeysetManager.java:304)
+04-28 22:20:34.070  3123  4557 W AndroidKeysetManager: 	at com.google.crypto.tink.integration.android.AndroidKeysetManager$Builder.readOrGenerateNewKeyset(AndroidKeysetManager.java:280)
+04-28 22:20:34.070  3123  4557 W AndroidKeysetManager: 	at com.google.crypto.tink.integration.android.AndroidKeysetManager$Builder.build(AndroidKeysetManager.java:230)
+04-28 22:20:34.070  3123  4557 W AndroidKeysetManager: 	at androidx.security.crypto.EncryptedSharedPreferences.create(EncryptedSharedPreferences.java:121)
+04-28 22:20:34.070  3123  4557 W AndroidKeysetManager: 	at com.united.mobile.android.reservation.ui.seatmap.sharedpref.ReservationSharedRepositoryImpl$sharedPreferences$2.invoke(ReservationSharedRepositoryImpl.kt:101)
+04-28 22:20:34.070  3123  4557 W AndroidKeysetManager: 	at com.united.mobile.android.reservation.ui.seatmap.sharedpref.ReservationSharedRepositoryImpl$sharedPreferences$2.invoke(ReservationSharedRepositoryImpl.kt:98)
+04-28 22:20:34.070  3123  4557 W AndroidKeysetManager: 	at kotlin.SynchronizedLazyImpl.getValue(LazyJVM.kt:74)
+04-28 22:20:34.070  3123  4557 W AndroidKeysetManager: 	at com.united.mobile.android.reservation.ui.seatmap.sharedpref.ReservationSharedRepositoryImpl.getSharedPreferences(ReservationSharedRepositoryImpl.kt:98)
+04-28 22:20:34.070  3123  4557 W AndroidKeysetManager: 	at com.united.mobile.android.reservation.ui.seatmap.sharedpref.ReservationSharedRepositoryImpl.setUserJustHardLogin(ReservationSharedRepositoryImpl.kt:90)
+04-28 22:20:34.070  3123  4557 W AndroidKeysetManager: 	at com.united.mobile.android.reservation.comm.ProfileCommunicationHelperImpl.setUserJustHardLogin(ProfileCommunicationHelperImpl.kt:257)
+04-28 22:20:34.070  3123  4557 W AndroidKeysetManager: 	at com.united.mobile.android.reservation.comm.ReservationFacade.processRequest(ReservationFacade.kt:259)
+04-28 22:20:34.070  3123  4557 W AndroidKeysetManager: 	at com.united.mobile.android.comm.MainFacade$processEvent$3.invokeSuspend(MainFacade.kt:33)
+04-28 22:20:34.070  3123  4557 W AndroidKeysetManager: 	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+04-28 22:20:34.070  3123  4557 W AndroidKeysetManager: 	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:106)
+04-28 22:20:34.070  3123  4557 W AndroidKeysetManager: 	at kotlinx.coroutines.internal.LimitedDispatcher$Worker.run(LimitedDispatcher.kt:115)
+04-28 22:20:34.070  3123  4557 W AndroidKeysetManager: 	at kotlinx.coroutines.scheduling.TaskImpl.run(Tasks.kt:100)
+04-28 22:20:34.070  3123  4557 W AndroidKeysetManager: 	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:584)
+04-28 22:20:34.070  3123  4557 W AndroidKeysetManager: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:793)
+04-28 22:20:34.070  3123  4557 W AndroidKeysetManager: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:697)
+04-28 22:20:34.070  3123  4557 W AndroidKeysetManager: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:684)
+04-28 22:20:34.095  3123  4557 W AndroidKeysetManager: keyset not found, will generate a new one
+04-28 22:20:34.095  3123  4557 W AndroidKeysetManager: java.io.FileNotFoundException: can't read keyset; the pref value __androidx_security_crypto_encrypted_prefs_value_keyset__ does not exist
+04-28 22:20:34.095  3123  4557 W AndroidKeysetManager: 	at com.google.crypto.tink.integration.android.SharedPrefKeysetReader.readPref(SharedPrefKeysetReader.java:71)
+04-28 22:20:34.095  3123  4557 W AndroidKeysetManager: 	at com.google.crypto.tink.integration.android.SharedPrefKeysetReader.readEncrypted(SharedPrefKeysetReader.java:89)
+04-28 22:20:34.095  3123  4557 W AndroidKeysetManager: 	at com.google.crypto.tink.KeysetHandle.read(KeysetHandle.java:105)
+04-28 22:20:34.095  3123  4557 W AndroidKeysetManager: 	at com.google.crypto.tink.integration.android.AndroidKeysetManager$Builder.read(AndroidKeysetManager.java:304)
+04-28 22:20:34.095  3123  4557 W AndroidKeysetManager: 	at com.google.crypto.tink.integration.android.AndroidKeysetManager$Builder.readOrGenerateNewKeyset(AndroidKeysetManager.java:280)
+04-28 22:20:34.095  3123  4557 W AndroidKeysetManager: 	at com.google.crypto.tink.integration.android.AndroidKeysetManager$Builder.build(AndroidKeysetManager.java:230)
+04-28 22:20:34.095  3123  4557 W AndroidKeysetManager: 	at androidx.security.crypto.EncryptedSharedPreferences.create(EncryptedSharedPreferences.java:126)
+04-28 22:20:34.095  3123  4557 W AndroidKeysetManager: 	at com.united.mobile.android.reservation.ui.seatmap.sharedpref.ReservationSharedRepositoryImpl$sharedPreferences$2.invoke(ReservationSharedRepositoryImpl.kt:101)
+04-28 22:20:34.095  3123  4557 W AndroidKeysetManager: 	at com.united.mobile.android.reservation.ui.seatmap.sharedpref.ReservationSharedRepositoryImpl$sharedPreferences$2.invoke(ReservationSharedRepositoryImpl.kt:98)
+04-28 22:20:34.095  3123  4557 W AndroidKeysetManager: 	at kotlin.SynchronizedLazyImpl.getValue(LazyJVM.kt:74)
+04-28 22:20:34.095  3123  4557 W AndroidKeysetManager: 	at com.united.mobile.android.reservation.ui.seatmap.sharedpref.ReservationSharedRepositoryImpl.getSharedPreferences(ReservationSharedRepositoryImpl.kt:98)
+04-28 22:20:34.095  3123  4557 W AndroidKeysetManager: 	at com.united.mobile.android.reservation.ui.seatmap.sharedpref.ReservationSharedRepositoryImpl.setUserJustHardLogin(ReservationSharedRepositoryImpl.kt:90)
+04-28 22:20:34.095  3123  4557 W AndroidKeysetManager: 	at com.united.mobile.android.reservation.comm.ProfileCommunicationHelperImpl.setUserJustHardLogin(ProfileCommunicationHelperImpl.kt:257)
+04-28 22:20:34.095  3123  4557 W AndroidKeysetManager: 	at com.united.mobile.android.reservation.comm.ReservationFacade.processRequest(ReservationFacade.kt:259)
+04-28 22:20:34.095  3123  4557 W AndroidKeysetManager: 	at com.united.mobile.android.comm.MainFacade$processEvent$3.invokeSuspend(MainFacade.kt:33)
+04-28 22:20:34.095  3123  4557 W AndroidKeysetManager: 	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+04-28 22:20:34.095  3123  4557 W AndroidKeysetManager: 	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:106)
+04-28 22:20:34.095  3123  4557 W AndroidKeysetManager: 	at kotlinx.coroutines.internal.LimitedDispatcher$Worker.run(LimitedDispatcher.kt:115)
+04-28 22:20:34.095  3123  4557 W AndroidKeysetManager: 	at kotlinx.coroutines.scheduling.TaskImpl.run(Tasks.kt:100)
+04-28 22:20:34.095  3123  4557 W AndroidKeysetManager: 	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:584)
+04-28 22:20:34.095  3123  4557 W AndroidKeysetManager: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:793)
+04-28 22:20:34.095  3123  4557 W AndroidKeysetManager: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:697)
+04-28 22:20:34.095  3123  4557 W AndroidKeysetManager: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:684)
+04-28 22:20:34.286  3123  3123 I ViewTarget: Glide treats LayoutParams.WRAP_CONTENT as a request for an image the size of this device's screen dimensions. If you want to load the original image and are ok with the corresponding memory cost and OOMs (depending on the input size), use override(Target.SIZE_ORIGINAL). Otherwise, use LayoutParams.MATCH_PARENT, set layout_width and layout_height to fixed dimension, or use .override() with fixed dimensions.
+04-28 22:20:34.294  3123  3123 E PlayCore: UID: [10067]  PID: [3123] AppUpdateService : onError(-9)
+04-28 22:20:34.593  3123  4558 W QM Native SDK: Capture is currently uninitialized. Please call initialize and start first.
+04-28 22:20:35.187  3123  3123 W BMP:MotionListener: Unreliable motion sensors data...
+04-28 22:20:35.188  3123  3123 W BMP:OrientationListener: Unreliable orientation sensor data...
+04-28 22:20:37.038  3123  3123 D MapsInitializer: preferredRenderer: null
+04-28 22:20:37.038  3123  3123 D zzcb    : preferredRenderer: null
+04-28 22:20:37.039  3123  3123 W GooglePlayServicesUtil: com.united.mobile.android requires the Google Play Store, but it is missing.
+04-28 22:20:37.039  3123  3123 D zzcb    : preferredRenderer: null
+04-28 22:20:37.039  3123  3123 W GooglePlayServicesUtil: com.united.mobile.android requires the Google Play Store, but it is missing.
+04-28 22:20:37.040  3123  3123 W GooglePlayServicesUtil: com.united.mobile.android requires the Google Play Store, but it is missing.
+04-28 22:20:37.041  3123  3123 D MapsInitializer: preferredRenderer: null
+04-28 22:20:37.041  3123  3123 D zzcb    : preferredRenderer: null
+04-28 22:20:37.041  3123  3123 W GooglePlayServicesUtil: com.united.mobile.android requires the Google Play Store, but it is missing.
+04-28 22:20:37.041  3123  3123 D zzcb    : preferredRenderer: null
+04-28 22:20:37.041  3123  3123 W GooglePlayServicesUtil: com.united.mobile.android requires the Google Play Store, but it is missing.
+04-28 22:20:37.067  3123  3123 I ViewTarget: Glide treats LayoutParams.WRAP_CONTENT as a request for an image the size of this device's screen dimensions. If you want to load the original image and are ok with the corresponding memory cost and OOMs (depending on the input size), use override(Target.SIZE_ORIGINAL). Otherwise, use LayoutParams.MATCH_PARENT, set layout_width and layout_height to fixed dimension, or use .override() with fixed dimensions.
+04-28 22:20:37.312  3123  4518 W QM Native SDK: Capture is currently uninitialized. Please call initialize and start first.
+04-28 22:20:37.337  3123  3123 I ViewTarget: Glide treats LayoutParams.WRAP_CONTENT as a request for an image the size of this device's screen dimensions. If you want to load the original image and are ok with the corresponding memory cost and OOMs (depending on the input size), use override(Target.SIZE_ORIGINAL). Otherwise, use LayoutParams.MATCH_PARENT, set layout_width and layout_height to fixed dimension, or use .override() with fixed dimensions.
+04-28 22:20:37.337  3123  3123 I chatty  : uid=10067(com.united.mobile.android) identical 1 line
+04-28 22:20:37.337  3123  3123 I ViewTarget: Glide treats LayoutParams.WRAP_CONTENT as a request for an image the size of this device's screen dimensions. If you want to load the original image and are ok with the corresponding memory cost and OOMs (depending on the input size), use override(Target.SIZE_ORIGINAL). Otherwise, use LayoutParams.MATCH_PARENT, set layout_width and layout_height to fixed dimension, or use .override() with fixed dimensions.
+04-28 22:20:38.691  3123  3123 W BMP:MotionListener: Unreliable motion sensors data...
+04-28 22:20:38.692  3123  3123 W BMP:OrientationListener: Unreliable orientation sensor data...

@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <string name="AUTH_CODE">Default_Auth_Code</string>
+    <string name="ACCESS_TOKEN">GBF2vFnZFNMW931MCMKPY6jt4rD8HKS1ExlI5vTgWNa4eF/Qq0JoBl6lRzw67GK4t/Xi7dvw6+j/+dpd6uYLjaLrYeQrgVGpxErrgM5BJejoHAKSXkIKisWCvzj7a9HoVEs1oupeOSNstn6yO3ziCw==</string>
+    <long name="EXPIRES_IN" value="1714375277912" />
+    <string name="TOKEN_TYPE"></string>
+    <string name="REFRESH_TOKEN"></string>
+</map>

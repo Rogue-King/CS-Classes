@@ -1,0 +1,84 @@
+Please ensure that g++ is running version 11. This is needed for the filesystem library
+
+To start program either:
+./SQLExecutable for manual command input 
+or
+./SQLExecutable <filename> to run a test script
+
+This program parses an SQL file and executes the commands in the file. 
+Functionaliy includes Creating, deleting, and using databases
+Aswell as Creating, deleting, Select(printing), and Altering tables.
+
+The program organizes multiple databases by creating a new folder in the file path that
+the executable is runned at. Then it gives that folder a inputed name and the program is able
+to access any of the databases through a static directory file path that works by taking the initalized path + the database name.
+
+The Program organizes multiple tables through a file path that is updated by the use database
+function. Then the a table is created with the inputed name and can be accessed through the 
+updated filepath + the tables name.
+
+The program also stores tuples by first tokenizing the inputed data. Then the data is sent to an insert function that reads the 
+file for the header(skipping it) and then appends the data to a new row for each insertion command.
+
+NEW FEATURES: 
+
+The program now does inner joins by taking the inputed data and tokenizing it to the inner join funcion. Then it reads the file and inserts the data into 
+a vector of vectors. Then it iterates through the vector of vectors to find the row and column that matches the inputed data. Then it merges the data from both 
+vector of vectors of the table data that match the condition. Then the new vector of vectors is printed to the screen.
+
+The program now does left joins by taking the inputed data and tokenizing it to the left join funcion. Then it reads the file and inserts the data into
+a vector of vectors for each table. Then it iterates through the vector of vectors to find the row and column that matches the inputed data. Then it finds matches 
+in both tables and merges the data from both vector of vectors of the table data that match the condition. If a match is not found then the column is inserted to the vector as null. 
+Then the new vector of vectors is printed to the screen.
+
+
+
+
+
+Database:
+
+CreateDatabase:
+Creates a directory to reperesent the database by making a new folder in the inital file path
+
+DropDatabase:
+Removes the database after directory is found in program and deletes the folder.
+
+USEDATABASE:
+Updates file path to selected database for table functions to read. 
+
+Tables:
+
+Create Table:
+creates a table based on the inputed file path. Then creates a .csv file with the inputed table name
+
+Drop Table: 
+Deletes table inputed to program by taking inputed file path + the table's name. Then deleteing that target. 
+
+Select Table:
+Reads from a .csv that conatains table data and prints output from the table. Iterates by detecting a comma. 
+
+Append Table:
+Appends to a .csv file that contains table data. By reading inputed file, copying it to a temp file, then appending the new data to the temp file. Then deleting the original file and renaming the temp file to the original file name.
+
+insert into table: 
+Takes inputed tuples and tokenizes it. Then sends it to the insert function that reads the file for the header and then appends the data to a new row for each insertion command.
+
+delete from table: 
+Takes inputed data and tokenizes it. Then sends it to the delete function that calls the query function to find the row and column that matches the inputed data. Then it deletes using variables created by the query function to delete the data in the row that matches the inputed data.
+
+update table: 
+Takes inputed data and tokenizes it. Then sends it to the update function that reads the file calls the query function to find the row and column that matches the inputed data. Then it updates using variables created by the query function to update the data in the row and column that matches the inputed data.
+
+select table:
+If select table != * then it calls the query function to find the row and column that matches the inputed data. Then it reads the file and prints the data in the row and column that matches the inputed data.
+
+query function: 
+Takes inputed data and tokenizes it. Then it reads the file and inserts the data into a vector of vectors. Then it iterates through the vector of vectors to find the row and column that matches the inputed data. Then it returns the row and column that matches the inputed data as variables.
+
+NEW FEATURES:
+
+Inner Join:
+Takes inputed data and tokenizes it to the inner join funcion. Then it reads the file and inserts the data into a vector of vectors. Then it iterates through the vector of vectors to find the row and column that matches the inputed data. Then it merges the data from both vector of vectors of the table data that match the condition. Then the new vector of vectors is printed to the screen.
+
+Left Join:
+Takes inputed data and tokenizes it to the left join funcion. Then it reads the file and inserts the data into a vector of vectors for each table. Then it iterates through the vector of vectors to find the row and column that matches the inputed data. Then it finds matches in both tables and merges the data from both vector of vectors of the table data that match the condition. If a match is not found then the column is inserted to the vector as null. Then the new vector of vectors is printed to the screen.

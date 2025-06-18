@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <string name="DEVICE::MDL91357@37f80a72-39d0-429e-9b2b-c57648b88dc5">YES</string>
+    <boolean name="pushSemiPrivateDeviceConfig" value="false" />
+</map>

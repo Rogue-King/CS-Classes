@@ -1,0 +1,9 @@
+		;loads	data into registers
+		MOV		r1, #2
+		MOV		r2, #5
+		
+		CMP		r1, r2 ;compares the values
+		BGT		else
+		MOV		r3, r1 ; C = B
+endif
+		MOV		r3, r2 ;C = A

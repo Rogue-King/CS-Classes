@@ -1,0 +1,30 @@
+version: 2.9.3
+apkFileName: EVABSv4.apk
+isFrameworkApk: false
+usesFramework:
+  ids:
+  - 1
+  tag: null
+sdkInfo:
+  minSdkVersion: 14
+  targetSdkVersion: 26
+packageInfo:
+  forcedPackageId: 127
+  renameManifestPackage: null
+versionInfo:
+  versionCode: 1
+  versionName: 1.0
+resourcesAreCompressed: false
+sharedLibrary: false
+sparseResources: false
+unknownFiles:
+  error_prone/Annotations.gwt.xml: 8
+  jsr305_annotations/Jsr305_annotations.gwt.xml: 8
+  third_party/java_src/error_prone/project/annotations/Annotations.gwt.xml: 8
+  third_party/java_src/error_prone/project/annotations/Google_internal.gwt.xml: 8
+doNotCompress:
+- resources.arsc
+- assets/secrets
+- png
+- mp3
+- res/raw/link.txt

@@ -1,0 +1,15 @@
+array1	DCD		10,200,3,4,50,0
+		ldr		r1, =array1 ; r1 holds the memory location of the first element in your array1
+		ldr		r3, =array1
+		ldr		r2,[r1],#4
+while	ldr		r4,[r1],#4 ; r4 holds the data from the first element in the array
+		CMP		r4,#0 ; compares data from array elements
+		BEQ		done
+		
+		CMP		r4,r2
+		BLE		while
+		MOV		r2,r4
+		ADD		r3, r3, #4 ;stores memory location of max value in R3
+		BAL		while
+done
+		

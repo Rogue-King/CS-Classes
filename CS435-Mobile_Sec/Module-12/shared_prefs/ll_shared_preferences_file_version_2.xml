@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <string name="ll_shared_preferences_ui_locale">&quot;en_US&quot;</string>
+    <string name="ll_shared_preferences_key_time_zone">&quot;America/Los_Angeles&quot;</string>
+    <string name="ll_shared_preferences_host_app_version">&quot;4.1.102&quot;</string>
+    <string name="ll_shared_preferences_key_locusMapsAndroidSDKVersionName">&quot;3.2.51&quot;</string>
+    <string name="ll_shared_preferences_key_locusMapsAndroidSDKProductName">&quot;LocusMaps Android SDK&quot;</string>
+    <string name="ll_shared_preferences_host_app_id">&quot;com.united.mobile.android.UnitedApplication&quot;</string>
+    <string name="ll_shared_preferences_key_account_id">&quot;A1D4XY4NEBABI9&quot;</string>
+    <string name="sdktestapp_shared_preferences_key_install_id">&quot;f9da122f-30a2-48dc-a461-b1082d7dd2df&quot;</string>
+    <string name="ll_shared_preferences_os_version">&quot;28&quot;</string>
+</map>

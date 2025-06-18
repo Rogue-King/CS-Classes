@@ -1,0 +1,154 @@
+HW1:
+
+3) 
+a) 
+S-> aba|ab P ba
+P-> Pa | Pb | ε
+
+S - > () | [] | {} | (s) | [s] | {s} | ss
+
+5) 
+a)
+AssinStmt -> var = E
+var -> id | id [indexList]
+IndexList -> IndexList, E | E
+E -> var|...
+
+
+
+6)
+
+(b| b* a b* a)*
+b* | (b* a b* a b*)*
+
+
+HW2:
+
+(define (subst x y L)
+(if (null? L)
+    '()
+    (cons (if (eq? x (car L)) 
+        y 
+        (car L))
+        (subst x y (cdr L)))))
+
+(define (all-diff L)
+    (cond ((null? L) #t)
+        ((member? (car L) (cdr L)) #f)
+        (else (all-diff (cdr L)))))
+
+
+Tree: ()
+    (*()())
+
+(define(val T) (car L))
+(define(left T) (cdr L))
+(define (right T) (cdr(cdr L)))
+
+(define (n-nodes T))
+(cond ( null? T) 0
+    (else (+ 1 (n-nodes (left T)) (n-nodes (right T)))))
+
+
+(define (n-leaves T))
+(cond (null? T) 0
+    ((and (null? (left T))
+        (null? (right T))) 1)
+        (else (+ (n-leaves (left T)) 
+        (n-leaves (right T)))))
+
+(define (height T ))
+(cond (null? T) 0
+    (else (+ 1 (max (height (left T)) 
+                    (height (right T))))))
+
+         1
+        /  \
+       2    5
+      / \    \
+     3   4    6
+              |
+              7
+(define (postorder T)
+(cond (null? T) '() )
+    (else (append (postorder (left T))
+                  (postorder (right T))
+                        (list (val T)))))
+3427651
+
+(define (flatten L)
+ (cond ((null? L) '())
+        ((list? (car L)) (append (flatten (car L))
+                                 (flatten (cdr L))))
+        (else (cons (car L) (flatten (cdr L))))))
+
+            7
+           / \
+          5   9
+         / \   \
+        1   6   11
+
+(define (member-list V T)
+(cond ((null? T) #f)
+    ((= V (val T)) #t)
+    (else (or (member-list V (left T))
+              (member-list V (right T))))))
+
+HW3:
+
+x: int = 1
+y: int = 2
+procedure add
+    x = x + y
+procedure second (P: procedure)
+    x : int = 2
+    P ()
+
+Procedure first
+    y int = 3
+    second(add)
+//main
+first()
+write(x) //global x
+
+static scoping:
+global x 1 | 3
+global y 2
+local x 2
+local y 3
+write => 3
+
+dynamic scoping w/deep binding:'
+global x = 1
+global y = 2
+local y = 3
+pass add
+local x = 2
+call add
+global x = global x + local y = 4
+local x dies
+local y dies
+
+dynamic scoping w/shallow binding:
+global x =1
+global y = 2
+local y = 3
+pass add
+local x = 2 | 5
+call add
+local x = local x + local y = 5
+local x dies
+local y dies
+write global x => 1
+
+
+
+(define (f V L)
+(cond ((null? L) '())
+    ((equal? V (car L)) (cdr L)))
+    (else (cons (car L) 
+    (f V (cdr L)))))
+
+
+(define x '(a b c) )
+(set-cdr! x (cons 'm (cdr x)))

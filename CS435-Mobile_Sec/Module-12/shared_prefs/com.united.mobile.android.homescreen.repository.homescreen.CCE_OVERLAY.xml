@@ -1,0 +1,4 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <string name="cceOverlayResponse">{&quot;couponCode&quot;:&quot;4.1.106&quot;,&quot;flightData&quot;:&quot;amzn://apps/android?p\u003dcom.united.mobile.android&quot;,&quot;landingActionText&quot;:&quot;Update now&quot;,&quot;landingActionUrl&quot;:&quot;https://play.google.com/store/apps/details?id\u003dcom.united.mobile.android&quot;,&quot;landingBackgroundImageUrl&quot;:&quot;&quot;,&quot;landingBody&quot;:&quot;This app version is out of date. Please update to continue using.&quot;,&quot;landingHeaderTitle&quot;:&quot;App Update&quot;,&quot;landingNavigationTitle&quot;:&quot;United Airlines&quot;,&quot;link&quot;:&quot;4.1.106&quot;,&quot;predictableKey&quot;:&quot;MOB.HOMEPAGE.HOMEPAGEOVERLAY.FORCEUPDATE&quot;}</string>
+</map>

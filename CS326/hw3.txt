@@ -1,0 +1,67 @@
+Miguel Muniz
+CS 326
+hw 3
+3/1/2023
+
+
+1.
+There are outer block allocates of variables a,b, and c.
+then two variables allocates d and e.
+and then one variable allocate of f.
+and then another three variables g,h,and i allocated in a sepearte block after a, b, and c.
+because of g,h and i are allocated in a separate block, they are not in the same block as a, b, and c.
+so the amount of bytes that the code takes is 24 bytes after allocating 6 variables
+
+
+2.
+P is a procedure
+B: is real and a parameter of procedure P
+X: is real
+Q is a procedure and a subroutine of procedure P
+R is a procedure and a subroutine of procedure P
+A is real and a of parameter of R
+C is real and a of parameter of R
+Z is real
+
+3.
+a)
+In the print statment in line 7, a refers to line 2 where it equals and prints 1.
+In the print statment in line 7, b refers to line 5 where it equals to a and prints 1.
+In the print statment in line 11, a refers to line 8 where it equals and prints 3.
+In the print statment in line 11, b refers to line 5 where it equals to a and prints 1.
+In the print statment in line 14, a refers to line 2 where it equals and prints 1.
+In the print statment in line 14, b refers to line 3 where it equals and prints 2.
+
+b)
+In the print statment in line 7, a refers to line 8 where it equals and prints 3.
+In the print statment in line 7, b refers to line 5 where it equals to a and prints 1.
+In the print statment in line 11, a refers to line 8 where it equals and prints 3.
+In the print statment in line 11, b refers to line 5 where it equals to a and prints 1.
+In the print statment in line 14, a refers to line 2 where it equals and prints 1.
+In the print statment in line 14, b refers to line 3 where it equals and prints 2.
+
+A sematic error will occur due to a in line 5 that has not yet been defined. This same
+error occurs with a that to be printed in line 7.
+
+c)
+In the print statment in line 7, a refers to line 8 where it equals and prints 3.
+In the print statment in line 7, b refers to line 5 where it equals to a and prints 1.
+In the print statment in line 11, a refers to line 8 where it equals and prints 3.
+In the print statment in line 11, b refers to line 5 where it equals to a and prints 3.
+In the print statment in line 14, a refers to line 2 where it equals and prints 1.
+In the print statment in line 14, b refers to line 3 where it equals and prints 2.
+
+
+4.
+
+a) 
+The program prints 3, this is due to the program adding the global variables
+to x and y in the add function.
+
+b)
+The program prints 4, this is due to deepbind working when the y variable is passed to procedure second,
+updating it globaly and adding it with global x.
+
+c) 
+The program prints 1, this is because due to shallow binding treating variables as Local
+and therefore they are not updated globally.

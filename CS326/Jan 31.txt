@@ -1,0 +1,64 @@
+Language        Generator                          Acceptor            Compile phase
+Regular         Regulear grammer/expression        Finite automation   Lexical analysis (scanning)    
+Context-free    Context-free grammer/expression    Push-down automaton Syntax analysis (parsing)
+
+Lexical Analysis 
+-Define tokens in a progr.Language
+-using regular expressions
+-Tokens
+    -symbols + - ; :=
+    -keywords begin end if
+    -integer literals  141
+    -real literals  5.38e^3
+    -string literals 'Tom'
+    -identifiers  myVariable
+
+Ex: numeric literals -252 e^-12
+digit - 0|1|2|3|4|5|6|7|8|9
+unsigned_int = digit digit*
+unsigned_nr = unsigned_int . unsigned_int
+unsigned_nr = unsigned_int((.unsigned_int)|e)((e[+-]|e)unsigned_int)|e)
+number = (+|-|e)unsigned_nr
+
+Def:
+A regular ex[ression R is either:
+-empty string e
+-a character
+-R1* repetition 0/ or more times (Kleene closure)
+-R1R2 concatenation
+-R1|R2 alternation
+where R1 and R2 are regular expressions
+
+Also used : R+ repetition 1 or more times 
+R+ <=> R R*
+
+Lang: any strings over alphabet {a,b}
+R.E.: (a|b)*
+
+Lang: set of strings over alphabet {a,b} that contain at least one b
+R.E.: (a|b)*b(a|b)*
+
+Lang: set of all SSNs
+R.E.: digit = 0|1|2|3|4|5|6|7|8|9
+SSN= (digit)^3 - (digit)^2 - (digit)^4
+
+R.E.: (0|1)* 00 
+Lang: set of all strings over alphabet {0,1} that end in 00 "binary #s divisble by 4"
+
+R.E.: (a/b)* a(a|b)* a (a|b)*
+Lang: set of all strings over alphabet {a,b} that contain at least 2 a's
+
+Context-free Grammars
+Lang: set of all palindromes over alphabet {a,b}
+CFG: S -> a|b|e|aSa|bSb
+
+Lang: set of all arithmetic expressions
+CFG: E -> nr|id|E+E|E-E|E*E|E/E|-E|(E)
+
+Generate: a*X+begin
+Derivation: 
+=> E -> E + E =>
+=> E -> E * E =>
+=> id(a)* E + E =>
+=> id(a)* id(X) + E =>
+=> id(a)* id(X) + id(b)

@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <boolean name="package_upd" value="true" />
+    <string name="package">STR::com.united.mobile.android</string>
+    <boolean name="locale_upd" value="true" />
+    <string name="last_install">JSO::{&quot;count&quot;:0}</string>
+    <string name="timezone">STR::America/Los_Angeles</string>
+    <boolean name="timezone_upd" value="true" />
+    <boolean name="last_launch_instant_app" value="false" />
+    <int name="first_launch_time" value="1714364292" />
+    <int name="package_ts" value="1714364292" />
+    <int name="install_count" value="0" />
+    <string name="kochava_device_id">STR::KA31101714364292ta88775ccfc6c423ca02a99214442415c</string>
+    <string name="locale">STR::en-US</string>
+    <int name="launch_count" value="2" />
+    <string name="kochava_app_id">STR::kounited-prod-android-ocuhf4</string>
+    <int name="init_url_map_index" value="0" />
+    <int name="locale_ts" value="1714377298" />
+    <boolean name="initial_needs_sent" value="true" />
+    <string name="sdk_version">STR::AndroidTracker 3.11.0</string>
+    <int name="timezone_ts" value="1714377298" />
+    <boolean name="has_upgraded" value="true" />
+    <int name="init_url_map_selected_date_int" value="20240101" />
+    <boolean name="init_url_map_rotated" value="true" />
+</map>

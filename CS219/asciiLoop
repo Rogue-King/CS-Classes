@@ -1,0 +1,18 @@
+array2	DCD		'H','e','l','l','o',' ','W','o','r','l','d','.'
+		ldr		r1,=array2
+		ldr		r2,[r1]
+		
+while	ldr		r4,[r1],#4 ; r4 holds the data from the first element in the array
+		CMP		r4,#0x2E ; compares data from array elements and stops at end of array
+		BEQ		done
+		
+		ADD		r3, r3, #1 ;iterates length of array
+		
+if		CMP		r4, #65 ;r4 < 65
+		BLE		while
+		CMP		r4, #90 ;r4 > 90
+		BGE		while
+		ADD		r6, r6, #1 ;iterates #of upcase letters
+there
+		BAL		while
+done

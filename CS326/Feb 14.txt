@@ -1,0 +1,134 @@
+Boolean Expressions 
+(< 1 2) => #t
+(>= 3 4) => #f
+(= 4 4) => #t
+(eg? '(ab) `(ab)) => #f
+(equal? '(ab) `(ab)) => #t
+
+eg         equal? 
+  \/         |     |
+   O         O     O
+
+(not (> 5 6)) => #t
+(and (< 3 4) (= 2 3)) => #f
+(or (< 3 4) (= 2 3)) => #t
+
+and, or are special forms 
+-> only eval. as much as needed
+
+if
+(if <test_expr> <then_expr> <else_exp>)
+(if (< 5 6) 1 2) => 1
+(if (< 4 3) 1 2) => 2
+(if (= 3 4) 1 (2)) => Error: attempt to apply non_procedure 2
+(if (= 3 3) 1 (2)) => 1
+
+if is a speical form 
+
+cond 
+(cond 
+  (<test_expr> <exp1>...<expn>)
+  (<test_expr> <exp1>...<expn>)
+  ...
+  (else <expn>...<expng>))
+
+cond is a special form 
+
+(define n -5)
+(cond
+  ((< n 0) "negative")
+  ((> n 0) "positive")
+  (else "zero"))
+    => "negative"
+
+
+functions
+create a funciton: by eval. a lamda-expression
+
+(lamda (id1 id2...)    expr expz expn)   {expn} -> retrival of fct.
+        |formal args|   |body of fct.|
+        
+        |retrns the fct object|
+
+(lamda (x) (*xx)) => #<procedure>
+call a fct
+((lamda(x) (*xx)) 3) => 9
+ |#<procedure>|   |
+                  3
+
+Bind a name to a fct  
+(define square (lamda (x) (*xx)))
+square => #<procedure>
+
+Alternative notation: 
+(define (square x) (*xx))
+(square 3) => 9
+
+C                           Scheme
+if(a==0)                    (if (= a 0)
+    return f(x,y);            (f x y)
+else                          (g x y)
+    return g(x,y);
+
+((if (= a 0) 
+    f 
+    g) x y)
+    |/- #<procf>|
+    |\_ #<procg>|
+
+Recursion
+-base case: how to solve the smalest version of the problem
+-general/recursive case: show how to solve the problem by
+decomposing it into smaller versions of same problem
+
+factorial 
+factorial(n) = 1*2 x...*(n-1)* n
+              |factorial(n-1)|
+factorial(n) = 1  if n=1
+               nxfactorial(n-1) otherwise
+
+(define (factorial n)
+  (if (= n 1)
+      1
+      (* n (factorial (- n 1)))))
+
+Length of a list
+lan(L) = 0 if L is empty
+         1 + lan(tail of L) otherwise
+(define (len L))
+  (if (null? L)
+      0
+      (+ 1 (len (cdr L)))))
+
+membership in a list
+(define (memeber? x L)
+  (cond ((null? L) #f)
+        ((equal? x (car L) #t)
+        (else (member x (cdr L))
+(member? 1 '(5 2 3 1 4)) => #t
+(member? 1 '(3 2 3 (1 2) 4)) => #factorial
+
+deep-membership
+(define (member-d? x L)                          (8 3 4 1 5)
+  (cond ((null? L) #f)
+        ((list? (car L)) (or(member-d? x (car L)))
+                            (member-d? x (cdr L))))
+        ((equal? x (car L)) #t)
+        (else (member-d? x (cdr L)))))
+
+nth elem. in a list
+(define (nth L n)                 (2 4 8 1)
+  (if (= n 0)
+      (car L)
+      (nth (cdr L) (- n 1))))
+
+append                        (1| 2 3) (4 5) ->{append} (1 2 3 4 5)
+(define (append L1 L2)
+  (cond (null? L1) L2)
+      (else (cons (car L1) (append (cdr L1) L2)))))
+
+return a reversed list                (1| 2 3 4) -> {reverse} (4 3 2 1)
+(define (reverse L)
+  (if (null? L)
+            ()
+            (append (reverse (cdr L){234})) (list (carL)))))))

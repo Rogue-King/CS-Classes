@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <long name="CCENextAutoRefreshTimestamp" value="1714373589335" />
+    <string name="CCE_LATITUDE_KEY"></string>
+    <string name="CCE_USER">MDL91357</string>
+    <string name="CCE_LONGITUDE_KEY"></string>
+    <boolean name="CCEInitialLoadCompleted" value="true" />
+    <string name="CCE_GUIDS_KEY">[{&quot;id&quot;:&quot;fbd8478f-9612-41a5-82bf-f04298a5957f&quot;,&quot;name&quot;:&quot;CorrelationId&quot;},{&quot;id&quot;:&quot;81f5169c-d194-4893-9b3b-99fda952e907&quot;,&quot;name&quot;:&quot;SessionId&quot;},{&quot;id&quot;:&quot;81f5169c-d194-4893-9b3b-99fda952e907&quot;,&quot;name&quot;:&quot;XDPAuthToken&quot;},{&quot;id&quot;:&quot;1956995399&quot;,&quot;name&quot;:&quot;SessionRequestKey&quot;}]</string>
+    <boolean name="CCE_CHASE_FEEDBACK_KEY" value="true" />
+</map>

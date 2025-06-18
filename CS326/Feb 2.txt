@@ -1,0 +1,117 @@
++-*/
+-associativity : L to R
+-precedence : * / have higher precendence than + -
+
+New(unambiguous) grammar:
+E -> E + T | E - T | T
+T -> T * F | T / F | F
+F -> id    | nr    | -F | (E)
+
+Generate 3 + 4 * 5
+Parse Tree: 
+     E
+    / \
+   E + T
+   |   /|\
+   T  T * F
+   |  |   |
+   F  F   nr
+   |  |  (5)
+(nr) (nr)
+(3)   (5)
+
+Generate 10 - 4 - 3
+Parse Tree:
+
+
+
+Progr Lang -Design   - R.E.    , CFG (generators) 
+          \-Implemnt.- scanner , parser (acceptors)
+
+Functionality
+____________
+
+Scanner:
+-recognize tokens
+-ignores coments, white spaces
+-Implemnted as a funtion that returns the next token
+
+Parser:
+-calls scanner to get next token
+-builds parse tree
+
+
+-Programing Language
+-Language recognized by scannner : set of all valid tokens in PL
+-Language recognized by parser : set of all valid programs in PL
+
+Scanner - Implemnt as either:
+-an ad-hoc program
+-an exploit finite automatation
+-a table-driven automation 
+Finite automation:
+states = {S1,S2,S3, ...} S1 = initial state
+Inputs = {I1, .....Im}
+Transitions - t : States X Inputs -> States
+
+Automatic scanner generators: lex/flex
+
+R.E. -> C code that implment the scanner
+
+Parser:
+-given any CFG, we can create a parser that runs in O(n^3) time 
+-Specific classes or grammars that run in O(n) time
+    -LL (left-to-right, leftmost deriv) -> top-down. predictive parsers
+    -LR (left-to-right, rightmost deriv) -> bottom-up, non-predictive parsers
+
+Ex: A,B,C
+list -> id list_tail
+list.tail -> , id list_tail
+list)tail -> ;
+
+Top-Down:
+    list
+    / \
+   id  list_tail
+  (A)    /|\
+        , id list_tail
+          (B)  /|\
+             id , list_tail
+            (C)     |
+                    ;
+
+Bottom-Up:
+id(A), id(B), id(C);
+id(A), id(B), list_tail - ;
+id(A), id(B)  list_tail
+                 /|\
+                , id list_tail
+                  (C)  |
+                       ;
+id(A) list_tail
+        /|\
+       , id list_tail
+         (B)  /|\
+             , id  list_tail
+               (C)    |
+                      ;
+
+    list
+    / \
+id(A)  list_tail
+        /|\
+       , id list_tail
+         (B)  /|\
+             , id  list_tail
+               (C)     |
+                       ;
+
+Another grammer:
+list -> list_prefix ;
+list_prefix -> list_prefix , id
+list.prefix -> Implemnted
+
+Automatic parser generatorsL
+yacc / bison
+CFG ->  yacc -> C code that implment the parser
+                    
